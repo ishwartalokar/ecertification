@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h1 {
+        color: #333;
+      }
+      .certificate-detail {
+        margin-top: 20px;
+      }
+      .certificate-detail p {
+        font-size: 14px;
+      }
+      .status-approved {
+        color: green;
+        font-weight: bold;
+      }
+      .status-not-approved {
+        color: red;
+        font-weight: bold;
+      }
+      .status-waiting {
+        color: blue;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Certificate: {{ certificate.certificate_type }}</h1>
+
+    <div class="certificate-detail">
+      <p>
+        <strong>Certificate Type:</strong> {{ certificate.certificate_type }}
+      </p>
+      <p><strong>Description:</strong> {{ certificate.description }}</p>
+      <p>
+        <strong>Class:</strong> {{ certificate.user_profile.pursuing_class }}
+      </p>
+      <p><strong>Posting Date:</strong> {{ certificate.posting_date }}</p>
+      <p>
+        <strong>Status:</strong>
+        {% if certificate.status == 1 %}
+        <span class="status-approved">Approved</span>
+        {% elif certificate.status == 2 %}
+        <span class="status-not-approved">Not Approved</span>
+        {% else %}
+        <span class="status-waiting">Waiting for Approval</span>
+        {% endif %}
+      </p>
+      <p><strong>Admin Remark:</strong> {{ certificate.admin_remark }}</p>
+      <p>
+        <strong>Admin Remark Date:</strong> {{ certificate.admin_remark_date }}
+      </p>
+    </div>
+  </body>
+</html>

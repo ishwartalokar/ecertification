@@ -1,0 +1,47 @@
+﻿
+/**© 2020-2021..Lakshya 3R | All Rights Reserved....*/
+
+body
+{
+    background-color:#333;
+}
+
+.aboutTextMain
+{
+    margin-top:30px;
+    font-size:17px;
+    text-align:justify;
+    align-content:center;
+}
+
+.aboutTextCard {
+    background: -webkit-linear-gradient(orange,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    border:1px solid #808080;
+}
+
+.ownMainLinks {
+    background: -webkit-linear-gradient(#32CD32,#2E8B57);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.donateAreaAboutME
+{
+   background-color:transparent !important;
+}
+
+.donateAreaAboutMEcard {
+    background-color: transparent !important;
+    color:#fff !important;
+}
+
+.authorAbout {
+    background: -webkit-linear-gradient(#fff,#808080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}

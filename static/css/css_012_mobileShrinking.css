@@ -1,0 +1,414 @@
+﻿
+/**© 2020-2021..Lakshya 3R | All Rights Reserved....*/
+@media only screen and (max-width:1024px) {
+    
+}
+
+
+    @media only screen and (max-width:768px) {
+
+        html, body {
+            overflow-x: hidden !important;
+        }
+
+        header .navbar-brand {
+            padding-left: 1rem !important;
+            width: 220px;
+            height: 80px;
+        }
+
+        .logoParipath {
+            margin-left: 2px !important;
+        }
+
+        .navbar-nav {
+            background-color: #333 !important;
+        }
+
+        .nav-item .nav-link {
+            margin-left: 150px !important;
+            color: #C0C0C0 !important;
+        }
+
+        .authorImgHome
+        {
+            position:initial !important;
+            top:0% !important;
+            left:0% !important;
+            z-index:auto;
+            
+        }
+
+        .nav-item h5 {
+            margin-left: 150px !important;
+        }
+
+        .nav-item .btnPartiCipate {
+            margin-left: 150px !important;
+        }
+
+        .locationFooter {
+            margin-top: 30px;
+        }
+
+        .examPaymentTransact {
+            display: block !important;
+        }
+
+        .appliUnderProcess {
+            margin-left: 40px;
+        }
+
+        .aboutAppliNoConfirm {
+            display: block !important;
+            font-size: 9px !important;
+        }
+
+        .candidateImagDiv {
+            display: none;
+        }
+
+        .newFormAgreeTC {
+            display: block !important;
+            align-content: center !important;
+            text-align: center !important;
+        }
+
+        .validationText {
+            font-size: 11px !important;
+        }
+
+        .btnAgreeTcParticipate {
+            margin-left: 50px;
+            align-content: center !important;
+            text-align: center !important;
+        }
+
+        .newPublishContent {
+            overflow-y: hidden !important;
+        }
+
+        .mobileAajchaPariPath {
+            height: 550vh !important;
+        }
+
+        .drawingPublish {
+            margin: 5px 5px;
+            font-size: 12px !important;
+        }
+
+        .drwaingsHeaderBody {
+            height: 70px;
+        }
+
+        .tg {
+            margin-left: 0px !important;
+        }
+
+        .homePageNavbar .homepageNav {
+            background-color: transparent !important;
+            margin-right: 30px;
+        }
+
+}
+
+       
+    }
+
+    @media only screen and (max-width:576px) {
+        body {
+            overflow-x: hidden !important;
+            margin: 0 auto;
+           font-size:75%;
+        }
+
+        header .navbar-brand {
+            padding-left: 1rem !important;
+            width: 150px;
+            height: 80px;
+        }
+
+        .nav-item .nav-link {
+            margin-left: 110px !important;
+        }
+
+        .nav-item h5 {
+            margin-left: 110px !important;
+        }
+
+        .nav-item .btnPartiCipate {
+            margin-left: 110px !important;
+        }
+
+        .userLogin {
+            margin-left: 60px !important;
+        }
+
+
+
+        .logoParipath {
+            margin-left: 2px !important;
+        }
+
+        .cRctTitle {
+            font-size: 12px;
+            display: inline-block;
+        }
+
+        .cRctPoints {
+            margin: 1px !important;
+            font-size: 12px;
+        }
+
+        .list-group-item {
+            margin-left: 0%;
+        }
+
+        .examLevel {
+            display: block;
+        }
+
+            .examLevel ul {
+                margin-left: 0px !important;
+                font-size: 13px;
+            }
+
+        .fisrtCrctText {
+            font-size: 12px;
+        }
+
+        .secondCrct h3, .fisrtCrct h3, .examLevel h3, .fifthCrct h5, .fourthCrct h5 {
+            font-size: 15px;
+        }
+
+        .examldText {
+            font-size: 13px;
+        }
+
+        .secondCrctText {
+            font-size: 12px;
+        }
+
+        .fourthCrctText {
+            font-size: 12px;
+        }
+
+        .fifthCrctText {
+            font-size: 12px;
+        }
+
+        .otro-blockquote {
+            font-size: 1.0em;
+        }
+
+        .logoFooter {
+            width: 230px;
+            height: 92px;
+        }
+
+        .footer-content {
+            margin-left: 20px !important;
+        }
+
+        .content {
+            height: 29vh !important;
+        }
+
+        .mobileAajchaPariPath {
+            height: 1300vh !important;
+        }
+
+        .introductionVideo {
+            width: 250px;
+            height: 140px;
+        }
+
+        .rashtraGeetBody {
+            margin-left: 15px !important;
+            font-size: 10px;
+        }
+
+        .savidhanImg {
+            width: 250px !important;
+        }
+
+        .pledge {
+            font-size: 10px;
+        }
+
+        .drawingPublish {
+            margin: 5px 0px 5px 0px;
+            font-size: 8px !important;
+        }
+
+        .tg td {
+            font-size: 12px !important;
+        }
+
+        .tg th {
+            font-size: 15px !important;
+        }
+
+        .moral {
+            font-size: 11px;
+        }
+
+        .geetGaniKavitaText {
+            font-size: 12px;
+        }
+
+        .contactForm button, .contactForm input, .contactForm textarea {
+            width: 200px !important;
+            padding: 1em;
+            border: 1px solid #c9e6ff;
+        }
+
+        .contactForm {
+            margin: 15px 70px 0 30px;
+        }
+
+        .contactFormHeader {
+            font-size: 14px;
+        }
+
+        .agreeRules {
+            font-size: 10px;
+        }
+
+        .btnAgreeTcParticipate {
+            display: block;
+            margin: 0px;
+            width: 250px !important;
+        }
+
+        .newFormAgreeTC span {
+            display: block;
+            margin-top: 2px;
+        }
+
+        .userAuthWwebLogo {
+            width: 200px;
+            height: 72px;
+        }
+
+        .userAuthOuteBody h5 {
+            font-size: 10px;
+        }
+
+        .alreadyApplied {
+            display: none !important;
+        }
+
+
+
+        .newAlrealdyApplied {
+            display: initial !important;
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
+            background-image: linear-gradient( 117.8deg, rgba(240,19,77,1) 22.2%, rgba(228,0,124,1) 88.7% );
+            padding: .25em .4em;
+            font-size: 75%;
+            font-weight: 700;
+            vertical-align: baseline;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+        }
+
+        .messageBody {
+            font-size: 12px;
+        }
+
+        .tdAnswer {
+            display: block;
+        }
+
+        .btnApplyHomePage {
+            color: #fff !important;
+            background-color: red;
+            float: right;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+        .quotesText {
+            font-size: 12px !important;
+        }
+
+        .quotes h2{
+            font-size: 12px !important;
+        }
+
+        .sp h5 {
+            font-size: 12px !important;
+        }
+       
+    }
+
+    @media only screen and (max-width:476px) {
+        header .navbar-brand {
+            padding-left: 1rem !important;
+            width: 120px;
+            height: 80px;
+        }
+
+        .logoParipath {
+            margin-left: 2px !important;
+            width: 150px !important;
+            height: 60px !important;
+        }
+
+        .alreadyApplied {
+            display: block;
+        }
+
+        .section__heading {
+            font-size:18px !important;
+        }
+    }
+
+
+    /*Shrinking for mobile*/
+    @media (max-width: 732px) {
+
+
+        .waves {
+            height: 40px;
+            min-height: 40px;
+        }
+
+        .content {
+            height: 31vh;
+        }
+
+        .btn-Apply {
+            font-size: 1.0em;
+            color: #fff;
+            cursor: pointer;
+            background-color: red;
+        }
+
+        .mob-color {
+            color: #00d4ff;
+        }
+
+        .footer-content {
+            margin-left: 50px;
+        }
+		
+		.footerCopyright
+		{
+            margin-left: 40px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .waves {
+            height: 40px;
+            min-height: 65px;
+        }
+    }

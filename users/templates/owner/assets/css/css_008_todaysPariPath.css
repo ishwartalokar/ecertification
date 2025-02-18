@@ -1,0 +1,536 @@
+﻿
+/**© 2020-2021..Lakshya 3R | All Rights Reserved....*/
+
+
+body {
+    font-family: 'Avenir Next', 'Helvetica Neue', sans-serif;
+    margin: 0;
+
+}
+
+.main{
+    height:900vh;
+}
+
+.item {
+    height: 3000px;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    color: #fff;
+    border:none;
+
+}
+
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+.notice {
+    color: red;
+    font-weight: bolder;
+    font-style: italic;
+    background-color:#f0ffff;
+}
+
+.homepageNav
+{
+    background-color:none !important;
+}
+
+.badge-date {
+    align-content: center;
+    text-align: center;
+    background-image: linear-gradient(to right,red,orange);
+}
+
+.liveDate {
+    margin-top: 5px;
+    align-content: center;
+    text-align: center;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 20px;
+}
+
+.badgeMemberShip
+{
+    background-color:red;
+    color:#fff;
+    text-decoration:none;
+    margin-left:2px;
+}
+
+.ddmiSub
+{
+    color:cornflowerblue !important;
+    cursor:pointer;
+}
+
+.ddmiSub:hover {
+    display: inline-block;
+    background: -webkit-linear-gradient(#32CD32,#2E8B57);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.comptHearder {
+    color:#fff;
+    font-weight: bold;
+    background: linear-gradient(to right, #32CD32, #2E8B57);
+}
+
+.comptRltd p{
+    background: -webkit-linear-gradient(#32CD32,#2E8B57);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.comptRltd h5 {
+     
+    background: -webkit-linear-gradient(orangered,orangered);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    display:inline-block;
+    line-height:1.5;
+}
+.comptRltd .getRegCompt:hover {
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(to right, #32CD32, #2E8B57);
+}
+.getRegCompt {
+    display: inline-block;
+    font-weight: 400;
+    color: #2E8B57;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid #32CD32;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+    .getRegCompt:hover {
+        text-decoration: none;
+        color:#fff;
+    }
+
+    .nav-link-L3R {
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #21D4FD;
+        display: inline-block;
+        position: relative;
+        opacity: 0.75;
+    }
+
+    .nav-link-L3R:hover {
+        opacity: 1;
+    }
+
+    .nav-link-L3R::before {
+        transition: 300ms;
+        
+        height: 3px;
+        content: "";
+        position: absolute;
+        background: linear-gradient(to right, #32CD32, #2E8B57);
+    }
+
+.nav-link-ltr::before {
+    width: 0%;
+    bottom:0;
+}
+
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
+
+/*Get Started TodaysParipath*/
+.getStartedPt
+{
+    text-align:left;
+    color:black;
+}
+
+.aajachaPrPt h5 {
+    background: -webkit-linear-gradient(#32CD32,#2E8B57);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+.badge-dateTwo
+{
+    color:black;
+}
+
+.suVichar .suVicharAuthors
+{
+text-align:right;
+align-content:flex-end
+}
+
+.sutraSanchlanHeader {
+    background-color: #537895;
+    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+    border: none !important;
+    font-weight: bold;
+    color:#fff;
+}
+
+.getStartedPt .btnRstgt, .getStartedPt .btnPldg, .getStartedPt .btnCtn {
+    background-color: #00b712;
+    background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+    color: #fff;
+    font-weight: bolder;
+    border: none !important;
+}
+
+.pledgeMain {
+    font-weight: bolder;
+}
+.pledge {
+    font-size: 20px;
+    text-align: justify;
+    border-bottom: 1px solid orange;
+}
+
+    .pledge h4 {
+        margin-top: 10px;
+        background: -webkit-linear-gradient(orange,red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        display: inline-block;
+        padding: .25em .4em;
+        line-height: 1;
+        text-align: center;
+        align-content:center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+    }
+
+.pledgeHeader {
+    background: linear-gradient(to right, orange, red);
+    color:#fff;
+}
+
+.constituateHeader {
+    background: linear-gradient(to right, orange, red);
+    color: #fff;
+}
+
+.rastraGeetMain {
+    text-align: justify;
+}
+
+.rashtraGeetBody {
+    font-weight: 400;
+    margin-left: 60px;
+    text-align: justify;
+    font-weight:bolder;
+}
+
+.rashtraGeetHeader {
+    background: linear-gradient(to right, orange, red);
+    color: #fff;
+}
+
+.tPtBody
+{
+    margin:10px 10px 10px 10px;
+    border:1px solid red;
+}
+
+.dinVishesh {
+    margin: 10px 10px;
+    border: 0px solid transparent !important;
+    border-radius:10px !important;
+    color:black;
+    font-weight:bolder;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    animation-delay:.5s;
+}
+
+.dVtitle
+{
+    color:#fff;
+    font-weight:bolder;
+}
+
+.suVichar {
+    margin: 10px 10px;
+    border: 0px solid transparent !important;
+    border-radius: 10px !important;
+    background-color: #7ee8fa;
+    background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    font-weight: bolder;
+    color: black;
+    animation-delay: 0.8s;
+}
+
+.sVtitle {
+    color: #FFF;
+    font-weight: bolder;
+}
+
+.otherCopyTwo {
+    margin: 10px 10px;
+    border: 2px dashed red !important;
+    border-radius: 10px !important;
+    animation-delay: 1.2s; 
+}
+
+.aajachaPrPtTwo {
+    background: -webkit-linear-gradient(#32CD32,#2E8B57);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+.geetGaniKavitaMain .geetGaniKavitaCard {
+    margin: 10px 10px 10px 10px;
+    text-align: left;
+    color: black !important;
+    border: 1px solid orangered !important;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+}
+
+.geetGaniKavitaHeader {
+    font-size: 20px;
+    font-weight: bolder;
+    color:#fff;  
+}
+
+
+.publisherSpan {
+    color: #fff;
+    background-image: linear-gradient( 117.8deg, rgba(240,19,77,1) 22.2%, rgba(228,0,124,1) 88.7% );
+}
+
+.geetGaniKavitaText {
+    font-size: 15px;
+   
+}
+
+.geetGaniKavitaTitle {
+    color: yellow;
+    font-weight: bold;
+}
+
+.shlokCard {
+    margin: 10px 10px 10px 10px;
+    background-image: radial-gradient( circle 907px at 3.4% 19.8%, rgba(255,243,122,1) 0%, rgba(255,102,145,1) 97.4% );
+    max-height:300px;
+}
+
+.shlokTitle {
+    color: black;font-weight:bolder;
+}
+
+.storyMain {
+   color:black;
+}
+
+.storyCard {
+    background-image: radial-gradient( circle farthest-corner at 50.3% 44.5%, rgba(116,147,179,1) 0%, rgba(62,83,104,1) 100.2% );
+}
+
+.storyTitle
+{
+    font-weight:bold;
+    color:#fff;
+}
+
+.storyHeader {
+    font-weight: bolder;
+}
+
+.gkMain {
+    color: black;
+    margin-top: 10px !important;
+}
+
+.gkCard {
+    background-image: radial-gradient( circle 513px at 52.1% 52.6%, rgba(240,241,163,1) 0%, rgba(236,135,135,1) 90% );
+}
+
+.gkHeader
+{
+    font-weight:bold;
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 10px;
+    border: none !important;
+    margin-left: 250px;
+}
+
+    .tg td {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        padding: 10px 5px;
+        overflow: hidden;
+        word-break: normal;
+        border: none !important;
+    }
+
+    .tg th {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 10px 5px;
+       border-bottom:1px solid black;
+        overflow: hidden;
+        word-break: normal;
+        font-weight:bolder !important;
+       
+    }
+
+    .tg .tg-cly1 {
+        text-align: left;
+        vertical-align: middle
+    }
+
+    .tg .tg-0lax {
+        text-align: left;
+        vertical-align: top
+    }
+
+
+.psdnMainTwo
+{
+    margin-top:10px;
+}
+
+.psdnContent {
+    background-image: linear-gradient( 107.2deg, rgba(150,15,15,1) 10.6%, rgba(247,0,0,1) 91.1% );
+}
+
+
+.btnPsdnBody a:hover {
+    text-decoration: none !important;
+    color:yellow;
+}
+
+.btnPsdn {
+    background-image: linear-gradient( 107.2deg, rgba(150,15,15,1) 10.6%, rgba(247,0,0,1) 91.1% );
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+.drawingsMain
+{
+    margin:10px;
+    text-align:left;
+}
+
+
+.drawingPublish {
+    float: right;
+    background-image: linear-gradient( 179.5deg, rgba(255,230,69,1) 3.3%, rgba(255,157,73,1) 96% );
+}
+
+.btnMoreOpt {
+    background-color: #fff;
+    color: #333;
+}
+
+    .btnMoreOpt:hover {
+        border: 1px solid #fff;
+        background-color: #333;
+        color: #fff;
+    }
+
+.moral {
+    display: initial !important;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient( 117.8deg, rgba(240,19,77,1) 22.2%, rgba(228,0,124,1) 88.7% );
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+.btnApplyHomePage {
+    color: #fff !important;
+    background-color: red;
+    float: right;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.blockquote-footer {
+    color: #fff !important;
+}
+
+.btn-nav-pickUp {
+    font-weight: bold;
+    animation: mover 1s infinite alternate;
+    color: red;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        color: red;
+    }
+
+    100% {
+        transform: translateY(0px);
+        color: #ff6a00;
+        font-weight: bold;
+    }
+}
+
+.onlyDonate {
+    border: 2px groove #0094ff;
+    font-weight: bolder;
+    margin: 10px;
+    color: #0094ff;
+}
+
+.onlyDonateTitle {
+    font-weight: bolder;
+}
+
+.onlyDonateFooter {
+    font-weight: normal;
+}
+
+.transparent {
+    background: transparent;
+}

@@ -1,0 +1,29 @@
+﻿
+/**© 2020-2021..Lakshya 3R | All Rights Reserved....*/
+
+body {
+    overflow-x: hidden;
+}
+
+.wavesParticipate {
+    background-color: transparent !important;
+}
+
+.grandFinale {
+    color: #fff;
+    background-image: linear-gradient( 117.8deg, rgba(240,19,77,1) 22.2%, rgba(228,0,124,1) 88.7% );
+    border: none !important;
+    font-weight: bold;
+    color: #fff;
+}
+
+.btnAgreeTcParticipate {
+    border-radius: 20px !important;
+    background: linear-gradient(to right, #32CD32, #2E8B57);
+    border: none;
+    font-weight: bolder;
+}
+
+.applicationSpanFormCheck {
+    font-weight: bolder !important;
+}

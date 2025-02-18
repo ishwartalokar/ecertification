@@ -1,0 +1,505 @@
+
+/**� 2020-2021..Lakshya 3R | All Rights Reserved....*/
+
+body {
+    overflow-x: hidden;
+    background-color:#f0ffff !important;
+    
+}
+
+
+header h1 {
+  display: inline-block;
+  margin: 10px 0;
+  
+}
+header + hr {
+  margin: 10px 0;
+}
+
+input,
+textarea {
+    background-color: #F3E5F5;
+    border-radius: 0px !important;
+    padding: 12px 15px 12px 15px !important;
+    width: 100%;
+    box-sizing: border-box;
+    border: none !important;
+    border-bottom: 1px solid #F3E5F5 !important;
+    font-size: 16px !important;
+    color: black !important;
+    font-weight:bolder !important;
+}
+
+    input:focus,
+    textarea:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        border: 1px solid #32CD32 !important;
+        outline-width: 0;
+        
+    }
+
+        input:focus:invalid {
+           background-color:#dcdcdc;
+           opacity:0.5;
+        }
+
+::-webkit-input-placeholder { /* Edge */
+    color: #C0C0C0 !important; 
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #C0C0C0 !important;
+}
+
+::placeholder {
+    color: #C0C0C0 !important;
+}
+
+#contacts p,
+#contacts p.lead {
+    margin: 0;
+    background: -webkit-linear-gradient(red,orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+.contact {
+    
+   color:black;
+    font-weight: bolder;
+}
+.userAuth {
+  display: none;
+  margin:0;
+}
+
+.userAuthOuter {
+    margin-top: 10%;
+    color: #C0C0C0 !important;
+}
+
+.authOuterFooter a
+{
+    color:#DCDCDC !important;
+}
+
+.userAuthHeader {
+    text-align: left !important;
+}
+
+.userAuthWwebLogo {
+    width: 250px;
+    height: 90px;
+
+}
+
+.modal-header:last-child {
+    border-bottom: 0;
+}
+.card {
+  display: inline-block;
+  margin: 1em;
+  width:auto;
+}
+#contacts {
+  margin-left: -1em;
+  margin-right: -1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.userInfoSet {
+    margin: 5px 5px !important;
+}
+
+.user-info {
+    
+    display: inline-block;
+    margin: 0 0.5em;
+}
+.user-info img{
+  display: inline-block;
+  max-width: 2em;
+}
+
+.auth-true .authenticated,
+.auth-false .unauthenticated {
+  display: block;
+}
+.auth-true .unauthenticated,
+.auth-false .authenticated {
+  display: none;
+}
+
+
+.btn-color {
+    border-radius: 50px !important;
+    color: #fff !important;
+    background-image: linear-gradient(to right, red, orange) !important;  
+    cursor: pointer !important;
+    border: none !important;  
+    font-weight: bolder !important;
+}
+
+    .btn-color:hover {
+        color: #fff;
+        background-image: linear-gradient(to right, orange, red)
+    }
+
+.btn-white {
+    border-radius: 50px !important;
+    color: #2E8B57 !important;
+    background-color: #fff !important;
+    cursor: pointer !important;
+    border: 2px solid #32CD32 !important;
+    font-weight: bolder !important;
+}
+
+.badgeHome {
+    background: -webkit-linear-gradient(orange,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 15px;
+    float:right;
+    margin:10px;
+}
+
+.alreadyApplied {
+    color: #fff;
+    background-image: linear-gradient( 117.8deg, rgba(240,19,77,1) 22.2%, rgba(228,0,124,1) 88.7% );
+}
+
+.newAlrealdyApplied
+{
+    display:none !important;
+}
+
+.badgeHome i {
+    background: -webkit-linear-gradient(orange,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn-white:hover {
+    color: #fff !important;
+    background-image: linear-gradient(to right, #32CD32, #2E8B57) !important;
+}
+
+.newRegHeader {
+    background-image: linear-gradient(to right, orange, red);
+    font-weight:bolder !important;
+    color:#fff;
+}
+
+.btnReg {
+    background-image: linear-gradient(to right, #32CD32, #2E8B57);
+    color: #fff;
+}
+
+.loginHeader {
+    background-image: linear-gradient(to right, #32CD32, #2E8B57);
+    color: #fff;
+    font-weight: bolder;
+}
+
+.loginMdlBody .loginWinImgNew {
+    text-align: center;
+    align-content: center;
+}
+
+.loginWinImg {
+    width: 170px;
+    height: 70px;
+   
+}
+
+.btnApply {
+    background-image: linear-gradient(to right, orange, red);
+    color: #fff;
+    font-weight: bolder !important;
+    border: none;
+}
+
+.btnLogout {
+    background-image: linear-gradient(to right, red, #ff0000);
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+}
+
+.titleCol
+{
+    margin-right:20px;
+}
+
+.applicationSpan {
+    color: red !important;
+    background: transparent;
+    border: none;
+    font-weight: normal;
+}
+
+
+
+.applicationSpanFormCheck {
+
+    margin:10px 10px 10px 20px;
+    color: red !important;
+    background: transparent;
+    border: none;
+    font-weight: normal;
+
+}
+
+.newApplicationHeader {
+    background-image: linear-gradient(to right, #32CD32, #2E8B57);
+    color: #fff;
+    font-weight: bolder;
+}
+
+.newApplicationForm
+{
+    background-color:#f0ffff;
+}
+
+.newApplicationCarda {
+    background-color: #f0ffff !important;
+    border:none !important;
+}
+
+.newApplicationCardb {
+    background-color: #f0ffff !important;
+    border: none !important;
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+    .tg td {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        padding: 10px 5px;
+        border-style: solid;
+        border-width: 1px;
+        overflow: hidden;
+        word-break: normal;
+        border-color: black;
+    }
+
+    .tg th {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 10px 5px;
+        border-style: solid;
+        border-width: 1px;
+        overflow: hidden;
+        word-break: normal;
+        border-color: black;
+    }
+
+    .tg .tg-cly1 {
+        text-align: left;
+        vertical-align: middle
+    }
+
+    .tg .tg-0lax {
+        text-align: left;
+        vertical-align: top
+    }
+
+
+.proImg
+{
+    width:50px;
+    height:50px;
+}
+
+
+.appliUnderProcess
+{
+    color:red !important;
+    background-color:transparent !important;
+}
+
+.imgLogoInfieldofLm
+{
+    width:300px;
+    height:100px;
+
+}
+
+.passResText
+{
+    color:red !important;
+}
+
+.applicationState
+{
+    color:#32CD32 !important;
+    background-color:#f5f5f5 !important;
+}
+
+.navApplicationuserPro {
+    background-color: #537895;
+    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+    border: none !important;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.proMem {
+    background: linear-gradient(to right, #D4AF37, #D4AF37);
+    align-content: center;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    right: 230px;
+    z-index: 1000;
+    font-size: 16px;
+    font-weight: bolder;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    animation-delay: 1.0s;
+    
+}
+
+    .noBorder input {
+        border: none !important;
+        border-radius: 0px !important;
+        background-color: #F0FFFF !important;
+        color: #808080 !important;
+        font-weight: bold;
+    }
+
+.marginSpan {
+    width: 100px;
+    background-color: #7fffd4;
+    border: none !important;
+    color:black;
+    font-weight:bold;
+}
+
+.candidateImagDiv {
+    background: url(https://thumbs.gfycat.com/ImmaculateUnacceptableArizonaalligatorlizard-size_restricted.gif) repeat #cfcfe6;
+    align-content: center;
+    text-align: center;
+    font-size: 8px;
+    position: absolute;
+    right: 150px;
+    z-index: 1000;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    animation-delay: 1.0s;
+}
+
+.candidateImagDiv p {
+    color:red;
+}
+
+.candidateImag {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 150px;
+    width: 130px;
+}
+
+
+.bgSucceess {
+    background: linear-gradient(to right, orange, red);
+    color:#fff;
+    text-decoration:none;
+}
+
+    .bgSucceess:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #008080;
+}
+
+.feedbackGet
+{
+    margin-left:20px !important;
+}
+
+.registerDotOk
+{
+    background-color:#f0ffff !important;
+}
+
+.examPaymentTransact
+{
+    font-size:13px;
+}
+
+.paymentProcess {
+    background: linear-gradient(to right, orange, red);
+    color: #fff !important;
+    text-decoration: none;
+    font-weight:bolder;
+}
+
+.suceessAlert {
+    color: #32CD32 !important;
+    font-weight: bolder;
+    background-color: #537895;
+    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+    
+}
+
+
+.btnGray{
+    background-color:#DCDCDC !important;
+    font-weight:bold !important;
+    font-size:15px !important;
+
+}
+
+.btnClose{
+    color:white !important;
+    font-weight:bold !important;
+    background-color:#808080 !important;
+}
+
+    .btnClose:hover {
+        background-image: linear-gradient( 117.8deg, rgba(240,19,77,1) 22.2%, rgba(228,0,124,1) 88.7% );
+    }
+

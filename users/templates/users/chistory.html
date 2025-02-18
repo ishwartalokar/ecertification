@@ -1,0 +1,156 @@
+{% extends "users/basedashboard.html" %}
+
+{% load static %}
+
+{% block title %}
+Certificate History | 
+{% endblock title %}
+
+{% block navactive %}
+<ul class="navbar-nav">
+  <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'dashboard'%}">
+        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+          <i class="material-icons opacity-10">person</i>
+        </div>
+        <span class="nav-link-text ms-1">Profile</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white " href="{% url 'change_password'%}">
+        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+          <i class="material-icons opacity-10">dashboard</i>
+        </div>
+        <span class="nav-link-text ms-1">Change Password</span>
+      </a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link text-white" >
+        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+          <i class="material-icons opacity-10">receipt_long</i>
+        </div>
+        <span class="nav-link-text ms-1">Certificates</span>
+      </a>
+      <div class="menu-collapse">
+                        <ul style="list-style-type: none">
+                            <li class="nav-link-text ms-1"><a class="nav-link text-white " href="{% url 'apply_certificate'%}">Apply Certificate</a></li>
+                            <li class="nav-link-text ms-1"><a class="nav-link text-white active bg-gradient-success" href="{% url 'certificates'%}">Certificates History</a></li>
+                        </ul>
+                    </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white " href="{% url 'logout'%}">
+        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+          <i class="material-icons opacity-10">logout</i>
+        </div>
+        <span class="nav-link-text ms-1">Sign Out</span>
+      </a>
+    </li>
+    
+  </ul>
+  {% endblock navactive %}
+
+{% block certificate_history %}
+<div class="row">
+  <div class="col-12">
+    <div class="card my-4">
+      <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+        <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+          <h6 class="text-white text-capitalize ps-3">Certificate History</h6>
+        </div>
+      </div>
+      <div class="card-body px-0 pb-2">
+        <div class="table-responsive p-0">
+          <table class="table align-items-center mb-0">
+            <thead>
+                <tr>
+                    <th class="text-uppercase text-primary text-sm font-weight-bolder">#</th>
+                    <th class="text-uppercase text-primary text-sm font-weight-bolder ps-2">Certificate Type</th>
+                    <th class="text-uppercase text-primary text-sm font-weight-bolder">Class</th>
+                    <th class="text-uppercase text-primary text-sm font-weight-bolder">Description</th>
+                    <th class="text-uppercase text-primary text-sm font-weight-bolder">Posting Date</th>
+                    <th class="text-uppercase text-primary text-sm font-weight-bolder">Admin Remark</th>
+                    <th class="text-uppercase text-primary text-sm font-weight-bolder">Status</th>
+                    <th class="text-uppercase text-primary text-sm font-weight-bolder">Certificate</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% if certificates %}
+                    {% for certificate in certificates %}
+                        <tr>
+                            <td>
+                                <div class="d-flex px-2 py-1">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <h6 class="text-dark text-sm font-weight-bold mb-0">{{ forloop.counter }}</h6>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-dark text-sm font-weight-bold mb-0">
+                                    {{ certificate.certificate_type }}
+                                </div>
+                            </td>
+                            <td class="text-sm font-weight-bold mb-0">
+                                {{ certificate.user_profile.pursuing_class }}
+                            </td>
+                            <td class="text-sm mb-0">
+                                {{ certificate.description }}
+                            </td>
+                            <td class="text-sm mb-0">
+                                {{ certificate.posting_date }}
+                            </td>
+                            <td class="text-sm font-weight-bold mb-0">
+                                {% if certificate.admin_remark %}
+                                    {{ certificate.admin_remark }}
+                                {% else %}
+                                    Waiting for approval
+                                {% endif %}
+                                <p class="text-xs text-secondary mb-0">{{ certificate.admin_remark_date }}</p>
+                            </td>
+                            <td class="text-sm">
+                                {% if certificate.status == 1 %}
+                                    <span style="color: #08e83a">
+                                        Certificate Approved
+                                    </span>
+                                {% elif certificate.status == 2 %}
+                                    <span style="color: red">Not Approved</span>
+                                {% else %}
+                                    <span style="color: blue">Waiting for approval</span>
+                                {% endif %}
+                            </td>
+                            <td class="align-middle text-sm">
+                                {% if certificate.status == 1 %}
+                                    {% if certificate.certificate_type == 'Leaving Certificate' %}
+                                        <a href="cb/{{ certificate.id }}">
+                                            <button class="btn btn-link text-dark text-sm mb-0 px-0 ms-4">
+                                                <i class="material-icons text-lg position-relative me-1">picture_as_pdf</i> PDF
+                                            </button>
+                                        </a>
+                                    {% else %}
+                                        <a href="ca/{{ certificate.id }}">
+                                            <button class="btn btn-link text-dark text-sm mb-0 px-0 ms-4">
+                                                <i class="material-icons text-lg position-relative me-1">picture_as_pdf</i> PDF
+                                            </button>
+                                        </a>
+                                    {% endif %}
+                                {% else %}
+                                    <span style="color: black">-</span>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td colspan="8" class="text-center">No certificates available.</td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock certificate_history %}

@@ -1,0 +1,142 @@
+
+/**© 2020-2021..Lakshya 3R | All Rights Reserved....
+
+.contactSecretory {
+    height: 250px;
+    align-content: center;
+    text-align: center;
+    background-color: #333;
+}
+
+.contactSupportImg {
+    width: 200px;
+    height: 250px;
+}
+
+.newApplicationCarda {
+    font-weight: bolder;
+}
+
+.trm {
+    margin: 20px;
+}
+
+.contactUl {
+    list-style: none;
+}
+
+.contactForm {
+    margin: 15px 70px 0 70px;
+}
+
+.contactFormCard {
+    border: none;
+    color: #fff;
+}
+
+.contactFormHeader {
+    background-image: linear-gradient(to right,red,orange);
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.wrapper {
+    box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+    .wrapper > * {
+        padding: 1em;
+    }
+
+.content {
+    background: #f9feff;
+}
+
+    /* FORM STYLES 
+   form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+       form label {
+            display: block;
+			
+        }
+
+      form p {
+            margin: 0;
+        }
+
+       form .full {
+            grid-column: 1 / 3;
+        }
+
+        form button, form input,  form textarea {
+            width: 300px !important;
+            padding: 1em;
+            border: 1px solid #c9e6ff;
+        }
+
+form input {
+    float: left;
+    width: 200px;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    margin: 0 1%;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+    form input:focus {
+        outline: none;
+        border-bottom: 3px solid #2E8B57;
+        transition: all ease 0.2s;
+    }
+
+ form button {
+    background: #2E8B57;
+    border: 0;
+    text-transform: uppercase;
+}
+
+    form button:hover, form button:focus {
+        background: linear-gradient(to right, #2E8B57,#32CD32);
+        color: #fff;
+        outline: 0;
+        transition: background-color 2s ease-out;
+    }
+
+.suceessAlert {
+    color: #32CD32 !important;
+    font-weight: bolder;
+    background-color: #537895;
+    background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+}
+
+.btnContactUsDataSend {
+    background: linear-gradient(to right, #2E8B57, #32CD32);
+    border: none;
+    font-weight: bolder;
+}
+
+.donateAreaAboutMEcard {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+.wavesContact {
+    background-color: #333 !important;
+}
+.footerCopyrightMain {
+    text-align: center;
+    align-content: center;
+} */

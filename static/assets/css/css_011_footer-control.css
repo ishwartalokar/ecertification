@@ -1,0 +1,288 @@
+﻿
+/**© 2020-2021..Lakshya 3R | All Rights Reserved....*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background: #f0f8ff;
+    color: #003;
+}
+
+/*WavesInFooter*/
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -50px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+    background-color: #333;
+}
+
+.wavesHome {
+    background-color: #fff;
+}
+
+/* Animation */
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+    .parallax > use:nth-child(1) {
+        animation-delay: -2s;
+        animation-duration: 7s;
+    }
+
+    .parallax > use:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 10s;
+    }
+
+    .parallax > use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 13s;
+    }
+
+    .parallax > use:nth-child(4) {
+        animation-delay: -5s;
+        animation-duration: 20s;
+    }
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+.row .quikLinksUl li a {
+    color: #2E8B57;
+    transition: color .2s;
+}
+
+.quikLinksUl li a:hover {
+    text-decoration: none;
+    color: #ff6a00;
+}
+
+.quikLinksUl {
+    color: #2E8B57;
+}
+
+.footerContact a {
+    color: #2E8B57;
+    transition: color .2s;
+}
+
+    .footerContact a:hover {
+        color: #4180CB;
+    }
+
+.logoFooter
+{
+    width: 300px;
+    height: 120px;
+}
+
+.organisationInfo .footer-i {
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    color: darkorange;
+}
+
+
+.footer-i:hover {
+    color: white;
+    background: linear-gradient(to right, red,orange);
+}
+
+.locationFooter .footerContact {
+    font-size: 16px;
+    color: #2E8B57;
+    font-weight: bolder;
+    text-transform: capitalize;
+    letter-spacing: normal;
+}
+
+.footerLoc_i {
+    background: -webkit-linear-gradient(red,orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.quickLinksTitle {
+    background: -webkit-linear-gradient(red,orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footerCopyright {
+    border-top: 1px solid #32CD32;
+    color: #2E8B57;
+}
+
+.publisherIT {
+    background: green;
+    color: white;
+    
+}
+
+    .publisherIT:hover {
+        background: #ff6a00;
+       
+    }
+
+.fC_Email
+{
+    text-transform:lowercase; 
+}
+
+/*AboutModalInFooter*/
+.lakshya3rMdl {
+    color: #dcdcdc;
+    background-image: linear-gradient( 117.8deg, rgba(41,45,51,1) 22.2%, rgba(41,45,51,1) 88.7% );
+	
+}
+
+.lakshya3rAbout {
+    margin: 50px 50px;
+    text-align: left;
+}
+
+.itCreationMdl {
+    color: #fff;
+    background-image: linear-gradient( 117.8deg, rgba(240,19,77,1) 22.2%, rgba(228,0,124,1) 88.7% );
+}
+
+.itCreationAbout {
+    margin: 50px 50px;
+    text-align: center;
+}
+
+newPublishModal {
+    border: none !important;
+    
+}
+
+.newPublishBody {
+    border: none !important;
+    background: #FFFFF0 !important;
+}
+
+.newPublishContent {
+    background: #FFFFF0 !important;
+}
+
+.newPublishHeader {
+    color: #fff;
+    background-image: linear-gradient( 117.8deg, rgba(240,19,77,1) 22.2%, rgba(228,0,124,1) 88.7% );
+}
+
+.newPublishCardA {
+    border: none !important;
+    background: #FFFFF0 !important;
+}
+
+.newPublishCardB {
+    border: none !important;
+    background: #FFFFF0 !important;
+}
+
+.btnPublishSahitya {
+    color: #fff;
+    background-image: linear-gradient( 117.8deg, rgba(240,19,77,1) 22.2%, rgba(228,0,124,1) 88.7% );
+    border:none;
+    font-size:14px;
+}
+
+input,
+textarea {
+    background-color: #F0FFFF;
+    border-radius: 0px !important;
+    padding: 12px 15px 12px 15px !important;
+    width: 100%;
+    box-sizing: border-box;
+    border: none !important;
+    border-bottom: 1px solid #F3E5F5 !important;
+    font-size: 16px !important;
+    color: black !important;
+    font-weight: bolder !important;
+}
+    input:focus,
+    textarea:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        outline-width: 0;
+    }
+
+        input:focus:invalid {
+            background-color: #F0FFFF;
+        }
+
+::-webkit-input-placeholder { /* Edge */
+    color: #C0C0C0 !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #C0C0C0 !important;
+}
+
+::placeholder {
+    color: #C0C0C0 !important;
+}
+
+.feedbackGet {
+    margin-left: 20px !important;
+}
+
+.applicationSpanFormCheck {
+    margin-left: 40px !important;
+}
+
+.applicationSpan {
+    color: red !important;
+    background: transparent;
+    border: none;
+    font-weight: normal;
+}
+
+.applicationSpanFormCheck {
+    margin: 10px 10px 10px 20px;
+    color: red !important;
+    background: transparent;
+    border: none;
+    font-weight: normal;
+}
+
+.donatePaymentCard {
+    text-align: center;
+    border: none;
+}
+
+.pymt-btn {
+    margin: 20px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #ff6a00;
+    border: none;
+}
+
+    .pymt-btn:hover {
+        background-image: linear-gradient(to right,#32CD32,#ff6a00);
+        font-weight: bold;
+    }
+
+
+.wavesParticipate
+{
+    background-color:transparent !important;
+}

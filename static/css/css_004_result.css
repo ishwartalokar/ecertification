@@ -1,0 +1,36 @@
+﻿.bold-400{
+	font-weight:550 !important;
+}
+
+.bold-text{
+	font-weight:bold !important;
+}
+
+.form-body{
+	margin:0% 5% 5% 5%;
+	border:none !important;
+}
+
+.form-container{
+	margin-top:10px;
+	
+}
+
+.form-card{
+	border:none !important;
+}
+
+.form-header{
+	border:none !important;
+	background-color:#581845;
+	color:#fff;
+}
+
+.tc_001{
+	color:#581845;
+}
+
+.eGanit text{
+	color:#32cd32 !important;
+	font-weight:bold;
+}

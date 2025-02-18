@@ -1,0 +1,12 @@
+.disable-input{
+    border:none !important;
+    background-color: rgb(228, 223, 223);
+}
+
+.enter-input{
+    width: 100%;
+}
+
+.save-btn{
+    color:red;
+}
