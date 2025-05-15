@@ -1,0 +1,70 @@
+{% extends "owner/basemanageview.html" %}
+
+{% load static %}
+
+{% block title %}
+Admin Dashboard : Received Certificates . | 
+{% endblock title %}
+
+{% block tabletitle %}
+<h6 class="text-white text-capitalize ps-3">Manage Certificates</h6>
+{% endblock tabletitle%}
+
+{% block tableview %}
+<table class="table justify-content-center align-items-center mb-0">
+  <thead>
+    <tr>
+      <th class="text-center">Sr. No.</th>
+      <th>Student Name</th>
+      <th>Certificate Type</th>
+      <th>Application Date</th>
+      <th>Status</th>
+      <th class="text-center">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% if certificates %}
+    {% for certificate in certificates %}
+    <tr >
+      <td class="text-center">{{ forloop.counter }}</td>
+      <td>
+        <div class="d-flex px-2 py-1">
+          <div>
+            {% if student.image %}
+            <img src="{{ student.image.url }}" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+            {% else %}
+            <img src="{% static 'images/pro.png' %}" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+            {% endif %}
+          </div>
+          <div class="d-flex flex-column justify-content-center">
+            <h6 class="mb-0 text-sm">{{ certificate.user_profile.first_name }} {{ certificate.user_profile.last_name }}</h6>
+          </div>
+        </div>
+      </td>
+      <td>{{ certificate.certificate_type }}</td>
+      <td>{{ certificate.posting_date }}</td>
+      <td>
+        {% if certificate.status == 1 %}
+          <span class="text-success">Approved</span>
+        {% elif certificate.status == 2 %}
+          <span class="text-danger">Not Approved</span>
+        {% else %}
+        <span style="color: blue">Waiting for approval</span>
+        {% endif %}
+      </td>
+      <td class="text-center">
+        <a href="{% url 'takeaction' cert_id=certificate.id %}"><i class="material-icons assessment">assessment</i></a>
+      </td>
+      
+      
+    </tr>
+    {% endfor %}
+    {% else %}
+          <tr>
+              <td colspan="8" class="text-center">No Certificates available.</td>
+          </tr>
+      {% endif %}
+  </tbody>
+</table>
+
+{% endblock tableview %}

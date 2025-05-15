@@ -1,0 +1,21 @@
+<table style="border: 1px solid black;">
+    <th >Name
+        </th>
+        <th>Age
+        </th>
+{% for x in students %}
+    
+        <tr><td >{{ x.first_name }}</td>
+            <td>{{ x.age }}</td>
+        </tr>
+        
+{% endfor %}
+</table>
+
+<form method="post">
+    {% csrf_token %}
+    First No.<input type="number" name="num1" id="num1">
+    Second No.<input type="number" name="num2" id="num2">
+    <button type="submit">Add</button>
+    </form>
+    Result : <span>{{ result }}</span>

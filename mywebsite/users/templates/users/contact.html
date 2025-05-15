@@ -1,0 +1,475 @@
+﻿{% extends "users/base.html" %} {% load static %} {% block title %} Home
+{%endblock title %} {% block csscontact %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+{% endblock csscontact %} {% block contact %}
+<section class="u-clearfix u-section-2" id="sec-9c76">
+  <div class="u-align-left u-clearfix u-sheet u-sheet-1">
+    <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+      <div class="u-layout">
+        <div class="u-layout-row">
+          <div
+            class="u-container-style u-image u-layout-cell u-size-30 u-image-1"
+            data-image-width="1280"
+            data-image-height="853"
+          >
+            <div class="u-container-layout u-container-layout-1"></div>
+          </div>
+          <div
+            class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-2"
+          >
+            <div class="u-container-layout u-container-layout-2">
+              <h6 class="u-text u-text-default u-text-1">Contact Us</h6>
+              <div class="u-expanded-width u-form u-form-1">
+                {% if form_submitted %}
+                <div>
+                  <h1>Thank You!</h1>
+                  <p>
+                    Your message has been received. We will get back to you
+                    shortly.
+                  </p>
+                </div>
+                {% else %}
+                <form
+                  method="POST"
+                  novalidate
+                  class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form"
+                  style="padding: 0"
+                >
+                  {% csrf_token %}
+
+                  <div class="u-form-group u-form-name">
+                    <label for="name-daf4" class="u-label">Name</label>
+
+                    <input
+                      type="text"
+                      placeholder="Your name"
+                      name="name"
+                      id="name"
+                      class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white"
+                      required=""
+                    />
+                  </div>
+                  <div class="u-form-email u-form-group">
+                    <label for="email-daf4" class="u-label">Email</label>
+                    <input
+                      type="email"
+                      placeholder="Your email"
+                      name="email"
+                      id="email"
+                      class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white"
+                      required=""
+                    />
+                  </div>
+                  <div class="u-form-email u-form-group">
+                    <label for="subject-daf4" class="u-label">Subject</label>
+                    <input
+                      type="text"
+                      placeholder="Subject"
+                      name="subject"
+                      id="subject"
+                      class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white"
+                      required=""
+                    />
+                  </div>
+                  <div class="u-form-group u-form-message">
+                    <label for="message-daf4" class="u-label">Message</label>
+                    <textarea
+                      placeholder="Write in short"
+                      rows="4"
+                      cols="50"
+                      name="message"
+                      id="message"
+                      class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-white"
+                      required=""
+                    ></textarea>
+                  </div>
+
+                  <div class="u-align-left u-form-group u-form-submit">
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="u-align-center u-clearfix u-section-3" id="sec-8455">
+  <div class="u-clearfix u-sheet u-valign-middle">
+    <div class="u-expanded-width u-list u-list-1">
+      <div class="u-repeater u-repeater-1">
+        <div class="u-container-style u-list-item u-repeater-item">
+          <div
+            class="u-container-layout u-similar-container u-valign-top u-container-layout-1"
+          >
+            <span
+              class="u-custom-color-5 u-icon u-icon-circle u-spacing-20 u-icon-1"
+              ><svg
+                class="u-svg-link"
+                preserveAspectRatio="xMidYMin slice"
+                viewBox="0 0 513.64 513.64"
+              >
+                <use xlink:href="#svg-0451"></use></svg
+              ><svg
+                class="u-svg-content"
+                viewBox="0 0 513.64 513.64"
+                x="0px"
+                y="0px"
+                id="svg-0451"
+                style="enable-background: new 0 0 513.64 513.64"
+              >
+                <g>
+                  <g>
+                    <path
+                      d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72    c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68    c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44    l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </span>
+            <h5 class="u-align-center u-text u-text-default u-text-3">
+              {{contact_no}}
+            </h5>
+          </div>
+        </div>
+        <div
+          class="u-align-center u-container-style u-list-item u-repeater-item"
+        >
+          <div
+            class="u-container-layout u-similar-container u-valign-top u-container-layout-2"
+          >
+            <span
+              class="u-custom-color-5 u-icon u-icon-circle u-spacing-20 u-icon-2"
+              ><svg
+                class="u-svg-link"
+                preserveAspectRatio="xMidYMin slice"
+                viewBox="0 0 512 512"
+              >
+                <use xlink:href="#svg-6397"></use></svg
+              ><svg
+                class="u-svg-content"
+                viewBox="0 0 512 512"
+                x="0px"
+                y="0px"
+                id="svg-6397"
+                style="enable-background: new 0 0 512 512"
+              >
+                <g>
+                  <g>
+                    <polygon
+                      points="339.392,258.624 512,367.744 512,144.896   "
+                    ></polygon>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <polygon
+                      points="0,144.896 0,367.744 172.608,258.624   "
+                    ></polygon>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"
+                    ></path>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856    L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </span>
+            <h5 class="u-text u-text-default u-text-5">{{email_address}}</h5>
+          </div>
+        </div>
+        <div
+          class="u-align-center u-container-style u-list-item u-repeater-item"
+        >
+          <div
+            class="u-container-layout u-similar-container u-valign-top u-container-layout-3"
+          >
+            <span
+              class="u-custom-color-5 u-icon u-icon-circle u-spacing-20 u-icon-3"
+              ><svg
+                class="u-svg-link"
+                preserveAspectRatio="xMidYMin slice"
+                viewBox="0 0 512 512"
+              >
+                <use xlink:href="#svg-61da"></use></svg
+              ><svg
+                class="u-svg-content"
+                viewBox="0 0 512 512"
+                x="0px"
+                y="0px"
+                id="svg-61da"
+                style="enable-background: new 0 0 512 512"
+              >
+                <g>
+                  <g>
+                    <path
+                      d="M256,0C161.896,0,85.333,76.563,85.333,170.667c0,28.25,7.063,56.26,20.49,81.104L246.667,506.5    c1.875,3.396,5.448,5.5,9.333,5.5s7.458-2.104,9.333-5.5l140.896-254.813c13.375-24.76,20.438-52.771,20.438-81.021    C426.667,76.563,350.104,0,256,0z M256,256c-47.052,0-85.333-38.281-85.333-85.333c0-47.052,38.281-85.333,85.333-85.333    s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </span>
+            <h5 class="u-text u-text-default u-text-7">{{city_address}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock contact %} {% block css_a_contact %}
+<style class="u-style">
+  .u-section-2 .u-sheet-1 {
+    min-height: 500px;
+  }
+  .u-section-2 .u-layout-wrap-1 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .u-section-2 .u-image-1 {
+    min-height: 400px;
+    background-image: url("assets/images/bookSet.png");
+  }
+  .u-section-2 .u-container-layout-1 {
+    padding: 30px;
+  }
+  .u-section-2 .u-layout-cell-2 {
+    min-height: 400px;
+  }
+  .u-section-2 .u-container-layout-2 {
+    padding: 30px;
+  }
+  .u-section-2 .u-text-1 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform: none;
+    margin: 0 127px 0 auto;
+  }
+  .u-section-2 .u-form-1 {
+    height: 299px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .u-section-2 .u-form-group-4 {
+    margin-left: 0;
+  }
+  .u-section-2 .u-btn-1 {
+    border-style: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-image: none;
+    width: 100%;
+  }
+  @media (max-width: 1199px) {
+    .u-section-2 .u-sheet-1 {
+      min-height: 430px;
+    }
+    .u-section-2 .u-layout-wrap-1 {
+      position: relative;
+    }
+    .u-section-2 .u-image-1 {
+      min-height: 330px;
+    }
+    .u-section-2 .u-layout-cell-2 {
+      min-height: 606px;
+    }
+    .u-section-2 .u-text-1 {
+      font-size: 1.875rem;
+    }
+    .u-section-2 .u-form-group-4 {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 991px) {
+    .u-section-2 .u-sheet-1 {
+      min-height: 353px;
+    }
+    .u-section-2 .u-image-1 {
+      min-height: 253px;
+    }
+    .u-section-2 .u-layout-cell-2 {
+      min-height: 100px;
+    }
+    .u-section-2 .u-container-layout-2 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .u-section-2 .u-text-1 {
+      font-size: 1.5rem;
+      margin-right: 92px;
+    }
+  }
+  @media (max-width: 767px) {
+    .u-section-2 .u-sheet-1 {
+      min-height: 860px;
+    }
+    .u-section-2 .u-image-1 {
+      min-height: 380px;
+    }
+    .u-section-2 .u-container-layout-1 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .u-section-2 .u-container-layout-2 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .u-section-2 .u-text-1 {
+      font-size: 2.25rem;
+    }
+  }
+  @media (max-width: 575px) {
+    .u-section-2 .u-sheet-1 {
+      min-height: 578px;
+    }
+    .u-section-2 .u-image-1 {
+      min-height: 239px;
+    }
+    .u-section-2 .u-text-1 {
+      font-size: 2rem;
+    }
+  }
+</style>
+<style class="u-style">
+  .u-section-3 .u-sheet-1 {
+    min-height: 638px;
+  }
+  .u-section-3 .u-text-1 {
+    margin: 60px auto 0;
+  }
+  .u-section-3 .u-text-2 {
+    margin: 20px auto 0;
+  }
+  .u-section-3 .u-list-1 {
+    margin: 46px auto 60px;
+  }
+  .u-section-3 .u-repeater-1 {
+    grid-template-columns: repeat(3, calc(33.3333% - 6.66667px));
+    min-height: 388px;
+    grid-gap: 10px;
+  }
+  .u-section-3 .u-container-layout-1 {
+    padding: 30px;
+  }
+  .u-section-3 .u-icon-1 {
+    height: 100px;
+    width: 100px;
+    background-image: none;
+    color: rgb(255, 255, 255) !important;
+    margin: 0 auto;
+  }
+  .u-section-3 .u-text-3 {
+    margin: 20px auto 0;
+  }
+  .u-section-3 .u-text-4 {
+    margin: 20px auto 0 0;
+  }
+  .u-section-3 .u-btn-1 {
+    background-image: none;
+    border-style: none none solid;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    margin: 20px auto 0;
+    padding: 0;
+  }
+  .u-section-3 .u-container-layout-2 {
+    padding: 30px;
+  }
+  .u-section-3 .u-icon-2 {
+    height: 100px;
+    width: 100px;
+    background-image: none;
+    color: rgb(255, 255, 255) !important;
+    margin: 0 auto;
+  }
+  .u-section-3 .u-text-5 {
+    margin: 20px auto 0;
+  }
+  .u-section-3 .u-text-6 {
+    margin: 20px auto 0 0;
+  }
+  .u-section-3 .u-btn-2 {
+    background-image: none;
+    border-style: none none solid;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    margin: 20px auto 0;
+    padding: 0;
+  }
+  .u-section-3 .u-container-layout-3 {
+    padding: 30px;
+  }
+  .u-section-3 .u-icon-3 {
+    height: 100px;
+    width: 100px;
+    background-image: none;
+    color: rgb(255, 255, 255) !important;
+    margin: 0 auto;
+  }
+  .u-section-3 .u-text-7 {
+    margin: 20px auto 0;
+  }
+  .u-section-3 .u-text-8 {
+    margin: 20px auto 0 0;
+  }
+  .u-section-3 .u-btn-3 {
+    background-image: none;
+    border-style: none none solid;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    margin: 20px auto 0;
+    padding: 0;
+  }
+  @media (max-width: 1199px) {
+    .u-section-3 .u-list-1 {
+      margin-right: initial;
+      margin-left: initial;
+    }
+    .u-section-3 .u-repeater-1 {
+      grid-template-columns: repeat(3, calc(33.333333333333336% - 6.66667px));
+      min-height: 320px;
+    }
+  }
+  @media (max-width: 991px) {
+    .u-section-3 .u-repeater-1 {
+      grid-template-columns: repeat(2, calc(50% - 5.0000025px));
+      min-height: 735px;
+    }
+  }
+  @media (max-width: 767px) {
+    .u-section-3 .u-repeater-1 {
+      grid-template-columns: 100%;
+    }
+    .u-section-3 .u-container-layout-1 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .u-section-3 .u-container-layout-2 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .u-section-3 .u-container-layout-3 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+</style>
+
+{% endblock css_a_contact %}

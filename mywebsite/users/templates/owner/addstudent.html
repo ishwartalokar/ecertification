@@ -1,0 +1,93 @@
+{% extends "owner/baseform.html" %}
+
+{% load static %}
+
+{% block title %}
+Add Student Type | 
+{% endblock title %}
+
+{% block gotomanage %}
+<a class="btn btn-outline-primary btn-sm mb-0 me-2" target="_blank" href="{% url 'mstudent'%}">Manage Student</a>
+{% endblock gotomanage %}
+
+{% block formview %}
+<div class="container mt-5">
+    <h2 class="mb-4">Add Student</h2>
+    <form method="post" novalidate>
+        {% csrf_token %}
+        
+        <div class="form-group mb-3">
+            
+            {{ form.institute_name.label_tag }}
+            {{ form.institute_name }}
+            </div>
+            <div class="form-group mb-3">
+            {{ form.sid.label_tag }}
+            {{ form.sid }}
+            </div>
+            <div class="form-group mb-3">
+            {{ form.first_name.label_tag }}
+            {{ form.first_name }}
+            </div>
+            <div class="form-group mb-3">
+                {{ form.father_name.label_tag }}
+                {{ form.father_name }}
+                </div>
+            <div class="form-group mb-3">
+            {{ form.last_name.label_tag }}
+            {{ form.last_name }}
+            </div>
+            <div class="form-group mb-3">
+            {{ form.gender.label_tag }}
+            {{ form.gender }}
+            </div>
+            <div class="form-group mb-3">
+            {{ form.dob.label_tag }}
+            {{ form.dob }}
+            </div>
+            <div class="form-group mb-3">
+            {{ form.department.label_tag }}
+            {{ form.department }}
+            </div>
+            <div class="form-group mb-3">
+            {{ form.pursuing_class.label_tag }}
+            {{ form.pursuing_class }}
+            </div>
+            <div class="form-group mb-3">
+            {{ form.address.label_tag }}
+            {{ form.address }}
+            </div>
+            <div class="form-group mb-3">
+            {{ form.city.label_tag }}
+            {{ form.city }}
+            </div>
+            <div class="form-group mb-3">
+            {{ form.country.label_tag }}
+            {{ form.country }}
+            </div>
+            <div class="form-group mb-3">
+            {{ form.phone_number.label_tag }}
+            {{ form.phone_number }}
+            </div>
+            <div class="form-group mb-3">
+            {{ form.email_id.label_tag }}
+            {{ form.email_id }}
+            </div>
+            <div class="form-group mb-3">
+            {{ form.password.label_tag }}
+            {{ form.password }}
+            </div>
+            <div class="form-group mb-3">
+              {{ form.confirmpassword.label_tag }}
+              {{ form.confirmpassword }}
+          </div>
+               
+        <div class="form-group text-center">
+            <button type="submit" class="btn btn-success w-100">
+                Submit Application
+            </button>
+        </div>
+    </form>
+</div>
+
+{% endblock formview %}

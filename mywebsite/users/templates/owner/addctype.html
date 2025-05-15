@@ -1,0 +1,36 @@
+{% extends "owner/baseform.html" %}
+
+{% load static %}
+
+{% block title %}
+Add Certificate Type | 
+{% endblock title %}
+
+{% block gotomanage %}
+<a class="btn btn-outline-primary btn-sm mb-0 me-2" target="_blank" href="{% url 'mcertificatetype'%}">Manage Certificate Types</a>
+{% endblock gotomanage %}
+
+{% block formview %}
+<div class="card-header">
+  <h4 class="font-weight-bolder">Add Certificate</h4>
+  <p class="mb-0">Enter valid certificate details...</p>
+</div>
+<div class="card-body">
+  <form method="post">
+      {% csrf_token %}
+      <div class="form-group mb-3">
+          {{ form.certificate_type.label_tag }}
+          {{ form.certificate_type }}
+      </div>
+      <div class="form-group mb-3">
+          {{ form.description.label_tag }}
+          {{ form.description }}
+      </div>
+      <div class="form-group text-center">
+          <button type="submit" class="btn btn-success w-100">
+              Submit Application
+          </button>
+      </div>
+  </form>
+</div>
+{% endblock formview %}

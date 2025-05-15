@@ -1,0 +1,74 @@
+{% extends "owner/basemanageview.html" %}
+
+{% load static %}
+
+{% block title %}
+Admin Dashboard : All Student. | 
+{% endblock title %}
+
+{% block tabletitle %}
+<h6 class="text-white text-capitalize ps-3">Manage Student</h6>
+{% endblock tabletitle%}
+
+{% block tableview %}
+<table class="table align-items-center mb-0">
+  <thead>
+    <tr>
+      <th class="text-center">Sr. No.</th>
+      <th>Student ID</th>
+      <th>Photo & Full Name</th>
+      <th>Department</th>
+      <th>Status</th>
+      <th>Registration Date</th>
+      <th class="text-center">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% if students %}
+    {% for student in students %}
+    <tr>
+      <td class="text-center">{{ forloop.counter }}</td>
+      <td>{{ student.sid }}</td>
+      <td>
+        <div class="d-flex px-2 py-1">
+          <div>
+            {% if student.image %}
+            <img src="{{ student.image.url }}" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+            {% else %}
+            <img src="{% static 'images/pro.png' %}" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+            {% endif %}
+          </div>
+          <div class="d-flex flex-column justify-content-center">
+            <h6 class="mb-0 text-sm">{{ student.first_name }} {{ student.last_name }}</h6>
+          </div>
+        </div>
+      </td>
+      <td>{{ student.department }}</td>
+      <td>
+        {% if student.status %}
+          <span class="text-success">Active</span>
+        {% else %}
+          <span class="text-danger">Inactive</span>
+        {% endif %}
+      </td>
+      <td>{{ student.reg_date }}</td>
+      <td class="text-center">
+        <a href="{% url 'activate_student' student.id %}" onclick="return confirm('Are you sure you want to activate this student?');">
+          <i class="material-icons act_inact">done</i>
+        </a>
+        <a href="{% url 'deactivate_student' student.id %}" onclick="return confirm('Are you sure you want to deactivate this student?');">
+          <i class="material-icons delete_icon">clear</i>
+        </a>
+      </td>
+    </tr>
+    {% endfor %}
+
+    {% else %}
+          <tr>
+              <td colspan="8" class="text-center">No student available.</td>
+          </tr>
+      
+    {% endif %}
+  </tbody>
+</table>
+{% endblock tableview %}

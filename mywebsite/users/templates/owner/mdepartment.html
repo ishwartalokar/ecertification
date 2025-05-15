@@ -1,0 +1,60 @@
+{% extends "owner/basemanageview.html" %}
+
+{% load static %}
+
+{% block title %}
+Admin Dashboard : All Dept. | 
+{% endblock title %}
+
+{% block tabletitle %}
+<h6 class="text-white text-capitalize ps-3">Manage Department</h6>
+{% endblock tabletitle%}
+
+{% block tableview %}
+<table class="table align-items-center mb-0">
+  <thead>
+    <tr>
+      <th class="text-center">Sr. No.</th>
+      <th>Department Name</th>
+      <th>Dept. Short Name</th>
+      <th>Department Code</th>
+      <th>Creation Date</th>
+      <th class="text-center">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% if departments %}
+          {% for department in departments %}
+              <tr>
+                  <td class="text-center">
+                    {{ forloop.counter }}
+                  </td>
+                  <td class="text-sm font-weight-bold mb-0">
+                      {{ department.department_name }}
+                  </td>
+                  <td class="text-sm mb-0">
+                      {{ department.department_short_name }}
+                  </td>
+                  <td class="text-sm mb-0">
+                      {{ department.department_code  }}
+                  </td>
+                  <td class="text-sm mb-0">
+                    {{ department.creation_date }}
+                </td>
+                <td class="text-center">
+            <a href="{% url 'edepartment' deptid=department.id %}"><i class="material-icons edit_icon">mode_edit</i></a>
+            <a href="?del={{ department.id }}" onclick="return confirm('Do you want to delete');">
+                <i class="material-icons delete_icon">delete_forever</i>
+            </a>
+        </td>
+                  
+              </tr>
+          {% endfor %}
+      {% else %}
+          <tr>
+              <td colspan="8" class="text-center">No department available.</td>
+          </tr>
+      {% endif %}
+  </tbody>
+</table>
+{% endblock tableview %}

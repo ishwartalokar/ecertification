@@ -1,0 +1,56 @@
+{% extends "owner/basemanageview.html" %}
+
+{% load static %}
+
+{% block title %}
+Admin Dashboard : All Certificate Types. | 
+{% endblock title %}
+
+{% block tabletitle %}
+<h6 class="text-white text-capitalize ps-3">Manage Certificate Types</h6>
+{% endblock tabletitle%}
+
+{% block tableview %}
+<table class="table align-items-center mb-0">
+  <thead>
+    <tr>
+      <th class="text-center">Sr. No.</th>
+      <th>Certificate Type</th>
+      <th>Description</th>
+      <th>Creation Date</th>
+      <th class="text-center">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% if certificates %}
+          {% for certificate in certificates %}
+              <tr>
+                  <td class="text-center">
+                    {{ forloop.counter }}
+                  </td>
+                  <td class="text-sm font-weight-bold mb-0">
+                      {{ certificate.certificate_type }}
+                  </td>
+                  <td class="text-sm mb-0">
+                      {{ certificate.description }}
+                  </td>
+                  <td class="text-sm mb-0">
+                    {{ certificate.creation_date }}
+                </td>
+                <td class="text-center">
+            <a href="{% url 'ecertificatetype' ctypeid=certificate.id%}"><i class="material-icons edit_icon">mode_edit</i></a>
+            <a href="?del={{ certificate.id }}" onclick="return confirm('Do you want to delete');">
+                <i class="material-icons delete_icon">delete_forever</i>
+            </a>
+        </td>
+                  
+              </tr>
+          {% endfor %}
+      {% else %}
+          <tr>
+              <td colspan="8" class="text-center">No Certificates available.</td>
+          </tr>
+      {% endif %}
+  </tbody>
+</table>
+{% endblock tableview %}

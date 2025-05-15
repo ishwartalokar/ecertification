@@ -1,0 +1,60 @@
+{% extends "owner/basemanageview.html" %}
+
+{% load static %}
+
+{% block title %}
+Admin Dashboard : All Institute. | 
+{% endblock title %}
+
+{% block tabletitle %}
+<h6 class="text-white text-capitalize ps-3">Manage Insitute</h6>
+{% endblock tabletitle%}
+
+{% block tableview %}
+<table class="table align-items-center mb-0">
+  <thead>
+    <tr>
+      <th class="text-center">Sr. No.</th>
+      <th>Institute Name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>Country</th>
+      <th class="text-center">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% if institutes %}
+          {% for institute in institutes %}
+              <tr>
+                  <td class="text-center">
+                    {{ forloop.counter }}
+                  </td>
+                  <td class="text-sm font-weight-bold mb-0">
+                      {{ institute.institute_name }}
+                  </td>
+                  <td class="text-sm mb-0">
+                      {{ institute.address }}
+                  </td>
+                  <td class="text-sm mb-0">
+                      {{ institute.city  }}
+                  </td>
+                  <td class="text-sm mb-0">
+                    {{ institute.country }}
+                </td>
+                <td class="text-center">
+            <a href="{% url 'einstitute' instid=institute.id %}"><i class="material-icons edit_icon">mode_edit</i></a>
+            <a href="?del={{ institute.id }}" onclick="return confirm('Do you want to delete');">
+                <i class="material-icons delete_icon">delete_forever</i>
+            </a>
+        </td>
+                  
+              </tr>
+          {% endfor %}
+      {% else %}
+          <tr>
+              <td colspan="8" class="text-center">No institute available.</td>
+          </tr>
+      {% endif %}
+  </tbody>
+</table>
+{% endblock tableview %}

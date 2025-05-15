@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 50px;
+        }
+        .letterhead {
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin: 30px 0;
+        }
+        .content {
+            font-size: 16px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .signature {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .stamp-container {
+            text-align: center;
+        }
+        .stamp-label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .stamp {
+            width: 100px;
+            height: 100px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Letterhead -->
+    <div class="letterhead">
+        <img src="https://yt3.googleusercontent.com/ytc/AIdro_n7fvNqMpWlyap0YUNMkWkxxgC0yrZYAU9C24uxEyYnwQ=s900-c-k-c0x00ffffff-no-rj" class="logo" alt="Institute Logo"><br>
+        <strong>e-Certification Institute of Technology</strong><br>
+        Tech Park - 1, Pune, MH, India<br>
+        Phone: +91-1234567890 | Email: itcreation.techie@gmail.com
+    </div>
+
+    <!-- Title -->
+    <div class="title">BONAFIDE CERTIFICATE</div>
+
+    <!-- Body Content -->
+    <div class="content">
+        This is to certify that <strong>{{ data.first_name }} {{ data.last_name }}</strong>, son/daughter of <strong>{{ data.father_name }} {{ data.last_name }}</strong>,
+        is a bonafide student of <strong>e-Certification Institute of Technology</strong>, enrolled in the <strong>{{ data.pursuing_class }}</strong>
+        program (Roll No: <strong>{{ data.sid }}</strong>) during the academic year <strong>2024 - 25</strong>.
+        <br><br>
+        This certificate is issued upon the request of the student for the purpose of <strong>{{ student.description }}</strong>.
+    </div>
+
+    <!-- Signature and Stamp -->
+    <div class="signature">
+        <div>
+            <br><br>
+            ________________________<br>
+            Head of Institution
+        </div>
+        <div class="stamp-container">
+            <div class="stamp-label">Institute Stamp</div>
+            <img src="https://png.pngtree.com/png-clipart/20230716/original/pngtree-approved-stamp-in-green-color-vector-png-image_9307540.png" class="stamp" alt="Institute Stamp">
+        </div>
+    </div>
+
+</body>
+</html>

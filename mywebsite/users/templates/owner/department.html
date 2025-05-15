@@ -1,0 +1,40 @@
+{% extends "owner/baseform.html" %}
+
+{% load static %}
+
+{% block title %}
+Add Department | 
+{% endblock title %}
+
+{% block gotomanage %}
+<a class="btn btn-outline-primary btn-sm mb-0 me-2" target="_blank" href="{% url 'mdepartment'%}">Manage Department</a>
+{% endblock gotomanage %}
+
+{% block formview %}
+<div class="card-header">
+  <h4 class="font-weight-bolder">Add Department</h4>
+  <p class="mb-0">Enter valid department details...</p>
+</div>
+<div class="card-body">
+  <form method="post">
+      {% csrf_token %}
+      <div class="form-group mb-3">
+          {{ form.department_name.label_tag }}
+          {{ form.department_name }}
+      </div>
+      <div class="form-group mb-3">
+          {{ form.department_short_name.label_tag }}
+          {{ form.department_short_name }}
+      </div>
+      <div class="form-group mb-3">
+        {{ form.department_code.label_tag }}
+        {{ form.department_code }}
+    </div>
+      <div class="form-group text-center">
+          <button type="submit" class="btn btn-success w-100">
+              Submit Application
+          </button>
+      </div>
+  </form>
+</div>
+{% endblock formview %}

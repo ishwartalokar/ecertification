@@ -1,0 +1,496 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <title>{% block title %}{% endblock title%} | e-Certification</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="eCertification">
+    <meta name="description" content="e-Certification is a cutting-edge, digital, and paperless platform designed to simplify and secure the certificate issuance process for educational institutions. By leveraging advanced technology, our platform ensures that certificates are not only easily accessible but also highly secure and tamper-proof.">
+    <meta name="page_type" content="Educational Website">
+    <meta name="generator" content="College e-Certification">
+    <meta name="author" content="IT CREATION">
+    <meta name="theme-color" content="#292d33">
+    <link rel="icon" href="{% static 'images/logo_mini.png' %}">
+    
+    <!--Og Tags-->
+    <meta property="og:title" content="College e-Certification">
+    <meta property="og:image" content=""/>
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="303" />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{% url 'home' %}"/>
+    <meta property="og:description" content="e-Certification is a cutting-edge, digital, and paperless platform designed to simplify and secure the certificate issuance process for educational institutions. By leveraging advanced technology, our platform ensures that certificates are not only easily accessible but also highly secure and tamper-proof.">
+	
+    <!--WhatsApp Tags-->
+    <meta name="whatsapp:site" content="@">
+    <meta name="whatsapp:card" content="summary_large_image">
+    <meta name="whatsapp:title" content="College e-Certification">
+    <meta name="whatsapp:description" content="e-Certification is a cutting-edge, digital, and paperless platform designed to simplify and secure the certificate issuance process for educational institutions. By leveraging advanced technology, our platform ensures that certificates are not only easily accessible but also highly secure and tamper-proof.">
+	
+    <!--Twitter Tags-->
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="index">
+    <meta name="twitter:description" content="e-Certification is a cutting-edge, digital, and paperless platform designed to simplify and secure the certificate issuance process for educational institutions. By leveraging advanced technology, our platform ensures that certificates are not only easily accessible but also highly secure and tamper-proof.">
+    
+    <link rel="icon" href="{% static 'images/logo_mini.png' %}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/css_011_footer-control.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    {% block csscontact %}  
+{% endblock csscontact %}
+{% block css_a_contact %}  
+
+{% endblock css_a_contact %}
+    
+    <script class="u-script" type="text/javascript" src="{% static 'json/jquery-1.9.1.min.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'json/nicepage.js' %}" defer=""></script>
+    
+   
+    
+    <script type="application/ld+json">{
+      {
+        "@context": "https://schema.org/",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How are you?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Good"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this the truth?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes!"
+            }
+          }
+        ]
+      }</script>
+    
+</head>
+  <body class="u-body">
+    <header class="u-clearfix u-custom-color-1 u-header u-header" id="sec-fe8d">
+      <div class="spardhaNotification text-center">
+        <a href="{% url 'register' %}" style="font-weight: bold;margin-top: 10px;">Bonafide Certificate<br>
+        <small>Click here for registration...</small></a>
+      </div>
+      <marquee style="background-color:#FF6;color:red !important;font-weight:bold;">Empower your institution with e-Certification – where innovation meets security and sustainability</marquee><div class="u-clearfix u-sheet u-sheet-1">
+             <a href="{% url 'home' %}" class="u-image u-logo u-image-1">
+               <img  src="{% static 'images/svg.svg' %}" class="u-logo-image u-logo-image-1">
+             </a>
+             <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-position="">
+               <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;" wfd-invisible="true">
+                 <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+                   <svg><use xlink:href="#menu-hamburger"></use></svg>
+                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect></symbol></defs></svg>
+                 </a>
+               </div>
+               <div class="u-custom-menu u-nav-container">
+                 <ul class="u-nav u-spacing-20 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-palette-2-base u-text-white" href="{% url 'home' %}" data-page-id="634489" style="padding: 10px;">Home</a>
+     </li>
+     <li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-palette-2-base u-text-white" href="{% url 'register' %}" data-page-id="676489" target="_blank" style="padding: 10px;">Registration</a>
+     </li>
+     
+     <li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-palette-2-base u-text-white" href="{% url 'about' %}" data-page-id="676586" style="padding: 10px;">About</a>
+     </li><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-palette-2-base u-text-white" href="{% url 'contact' %}" data-page-id="676602" style="padding: 10px;">Contact</a>
+     </li>
+     <li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-palette-2-base u-text-white " href="{% url 'adminlogin' %}" data-page-id="676602" style="padding: 10px;">Admin Login</a>
+     </li>
+     <li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-button-style u-nav-link u-text-active-custom-color-4 u-text-hover-palette-2-base u-text-white gawakadchekhelbtnnav" href="{% url 'login' %}" data-page-id="676489" target="_blank" style="padding: 10px;">Student Login</a>
+     </li>
+     </ul>
+               </div>
+               <div class="u-custom-menu u-nav-container-collapse" wfd-invisible="true">
+                 <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                   <div class="u-sidenav-overflow" style="background-color:#292d33;">
+                     <div class="u-menu-close" style="color:fff;"></div>
+             <a href="{% url 'home' %}" class="u-image u-logo u-image-1">
+               <img src="{% static 'images/svg.svg' %}" class="u-logo-image u-logo-image-1 logoPopUp">
+             </a>
+                     <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'home' %}" data-page-id="634489" style="padding: 10px;">Home</a>
+     </li>
+     <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'register' %}" data-page-id="676489" target="_blank" style="padding: 10px;">Registration</a>
+     </li>
+     
+     </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" data-page-id="676586" style="padding: 10px;">About</a>
+     </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="contactUs" data-page-id="676602" style="padding: 10px;">Contact us</a>
+     </li>
+     <li class="u-nav-item"><a class="u-button-style u-nav-link" href="admin/login" data-page-id="676602" style="padding: 10px;">Admin Login</a>
+      <li class="u-nav-item"><a class="u-button-style u-nav-link" href="login" data-page-id="676489" target="_blank" style="padding: 10px;border-bottom:2px solid #ffc700;;">Student Login</a>
+      </li>
+     </li>
+     </ul>
+                   </div>
+                 </div>
+                 <div class="u-black u-menu-overlay u-opacity u-opacity-70" wfd-invisible="true"></div>
+               </div>
+             </nav>
+           </div>
+         </header>
+<section>
+  {% block section %}  {% endblock section %}
+  {% block contact %}  {% endblock contact %}
+
+
+</section>
+
+  <!--  <section id="carousel_2ef3" class="u-carousel u-slide u-block-c7b6-1" data-u-ride="carousel" data-interval="5000">
+      <ol class="u-absolute-hcenter u-carousel-indicators u-block-c7b6-2">
+        <li data-u-target="#carousel_2ef3" data-u-slide-to="0" class="u-active u-grey-30"></li>
+        <li data-u-target="#carousel_2ef3" class="u-grey-30" data-u-slide-to="1"></li>
+      </ol>
+      <div class="u-carousel-inner" role="listbox">
+        <div class="skrollable skrollable-between u-active u-align-center u-carousel-item u-clearfix u-image u-shading u-section-2-1" src="" data-image-width="150" data-image-height="120">
+          <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+
+            <h1 class="u-text u-text-1 dc-text1 animate__animated animate__flip">e-<span>Certification</span></h1>
+            <p class="u-large-text u-text u-text-variant u-text-2 animate__animated animate__fadeIn">An easiest and secured way for Certification.
+			<br>Let's apply....,
+			</p>
+            <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+              <div class="u-layout">
+                <div class="u-layout-row">
+                  <div class="u-align-center-sm u-align-center-xs u-align-right-lg u-align-right-md u-align-right-xl u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
+                    <div class="u-container-layout u-valign-middle u-container-layout-1">
+                      <a href="login" class="u-border-2 u-border-palette-2-base u-btn u-btn-round u-button-style u-palette-2-base u-radius-50 u-btn-1 animate__animated animate__backInLeft">Apply Now</a>
+                    </div>
+                  </div>
+                  <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
+                    <div class="u-container-layout u-valign-middle u-container-layout-2">
+                      <a href="#" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-radius-50 u-btn-2 animate__animated animate__backInRight">More information</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skrollable skrollable-between u-align-center u-carousel-item u-clearfix u-image u-shading u-section-2-2" src="" data-image-width="150" data-image-height="84">
+          <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <h1 class="u-text u-text-1 animate__animated animate__flip">ई-<span style="color:#ffc700;">प्रकाशन</span></h1>
+            <p class="u-large-text u-text u-text-variant u-text-2">लाखो कोवळ्या मनाला भेदणारे हे व्यासपीठ आपल्याला आपले  साहित्य प्रकाशित करण्याची सुवर्णसंधी देत आहे.</p>
+			<p class="u-large-text u-text u-text-variant u-text-2">साहित्यामधे तुमच्या कविता, गाणी, लेख, गोष्टी, रेखांटने, नृत्य, चित्रपट, इत्यादी त्याचबरोबर नाविन्य कृती/उपक्रम हे प्रकाशित करू शकता.</p>
+            <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+              <div class="u-layout">.
+                <div class="u-layout-row">
+                  <div class="u-align-center-sm u-align-center-xs u-align-right-lg u-align-right-md u-align-right-xl u-container-style u-layout-cell u-left-cell u-size-30 u-layout-cell-1">
+                    <div class="u-container-layout u-valign-middle u-container-layout-1">
+                      <a href="login" class="u-border-2 u-border-palette-2-base u-btn u-btn-round u-button-style u-palette-2-base u-radius-50 u-btn-1">आत्ताच नोंदणी करा</a>
+                    </div>
+                  </div>
+                  <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
+                    <div class="u-container-layout u-valign-middle u-container-layout-2">
+                      <a href="#" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-radius-50 u-btn-2">अधिक माहिसाठी पुढे जा</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-body-alt-color u-block-c7b6-3" href="#carousel_2ef3" role="button" data-u-slide="prev">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
+        </span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-text-body-alt-color u-block-c7b6-4" href="#carousel_2ef3" role="button" data-u-slide="next">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
+        </span>
+        <span class="sr-only">Next</span>
+      </a>
+    </section>
+    <section class="u-align-center u-clearfix u-palette-5-dark-3 u-section-3" id="sec-183b">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">Our features</h2>
+        <p class="u-text u-text-palette-5-dark-1 u-text-2">Providing better & secured service&nbsp;</p>
+        <div class="u-expanded-width u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-40 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-1">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1"><span class="u-custom-item u-icon u-icon-circle u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 510 510"><use xlink:href="#svg-a201"></use></svg><svg class="u-svg-content" viewBox="0 0 510 510" id="svg-a201"><g><g><g><path d="m510 255c0 65.118-24.408 124.534-64.574 169.6-46.703 52.401-114.711 71.856-190.426 71.856-140.833 0-243.41-98.531-243.41-239.364 0-79.218 24.533-152.092 81.206-198.862 44.079-36.378 100.59-58.23 162.204-58.23 140.833 0 255 114.167 255 255z" fill="#ff5551"></path>
+</g>
+</g><g><path d="m380.584 345.207c18.301-37.868 76.566-158.43 88.849-183.845 1.869-3.867.249-8.516-3.618-10.385l-1.656-.8 4.376-9.055c2.192-4.536 1.197-9.776-2.086-13.219-.035-.037-.07-.073-.106-.109-.258-.264-.53-.516-.816-.757-.068-.058-.134-.116-.204-.172-.267-.215-.547-.417-.836-.61-.087-.058-.169-.121-.258-.177-.372-.235-.757-.455-1.163-.651-1.826-.883-3.768-1.25-5.661-1.16-4.164.198-8.093 2.61-10.034 6.628l-3.797 7.856-.579 1.199-1.656-.8c-3.867-1.869-8.517-.249-10.385 3.618l-3.922 8.116-.399-.193c-7.25-3.505-15.969-.469-19.473 6.782-7.251 15.004-29.804 9.84-29.804-6.824v-68.927c0-14.01-11.358-25.368-25.368-25.368h-45.766c-1.31 0-209.223 0-211.081 0h-.017c-14.849 11.963-28.662 25.981-40.127 40.456v.029c-5.368 6.777-10.388 13.839-15.056 21.149h-.037c-2.222 3.482-5.733 9.42-6.865 11.417.006.001.013.001.019.002-21.03 37.073-33.058 79.923-33.058 125.593 0 44.814 11.575 86.918 31.875 123.512.001.001.001.002.001.003 16.865 30.401 41.421 56.743 48.979 62.79l.395.316c45.54 42.417 106.608 68.379 173.75 68.379 75.716 0 143.717-33.005 190.415-85.409 15.084-16.927-2.542-42.63-23.904-35.035-.394.14-.789.279-1.183.417-21.011 7.353-42.971-8.404-42.971-30.664 0-4.887 1.101-9.703 3.227-14.102zm-291.144-149.985c-1.666 0-3.119-.327-4.375-.882-.233-1.302-.437-2.614-.65-3.924h5.255c3.178 0 5.754-2.576 5.754-5.754s-2.576-5.754-5.754-5.754h-6.854c-.087-.754-.178-1.508-.259-2.265 1.666-1.544 3.951-2.541 6.883-2.541 13.611.001 13.582 21.12 0 21.12zm-7.442-65.727h7.671c3.178 0 5.754-2.576 5.754-5.754s-2.576-5.754-5.754-5.754h-6.679c.067-.547.143-1.091.214-1.637 5.377-6.016 17.71-3.541 17.705 7.391-.005 11.508-14.182 13.972-18.911 5.754z" fill="#e20a62"></path>
+</g><g><g><path d="m329.568 56.354h-45.766v385.267h45.766c14.01 0 25.368-11.358 25.368-25.368v-334.531c0-14.01-11.358-25.368-25.368-25.368z" fill="#2896ff"></path>
+</g><g><path d="m316.45 70.436h-32.648v357.762h32.648c10.845 0 19.637-8.792 19.637-19.637v-318.488c0-10.845-8.791-19.637-19.637-19.637z" fill="#fff"></path>
+</g><g><path d="m295.402 56.354h-262.826v385.267h262.826c14.01 0 25.368-11.357 25.368-25.368v-334.531c0-14.011-11.358-25.368-25.368-25.368zm-228.383 327.978c-13.612 0-13.589-21.12 0-21.12 13.612.001 13.589 21.12 0 21.12zm0-59.652c-13.612 0-13.589-21.119 0-21.119 13.612 0 13.589 21.119 0 21.119zm0-62.19c-13.612 0-13.589-21.119 0-21.119 13.612-.001 13.589 21.119 0 21.119zm0-67.268c-13.612 0-13.589-21.119 0-21.119 13.612 0 13.589 21.119 0 21.119zm1.269-60.92c-13.612 0-13.589-21.12 0-21.12 13.612 0 13.589 21.12 0 21.12z" fill="#6ee1ff"></path>
+</g><g><path d="m320.77 403.518v-321.796c0-14.01-11.358-25.368-25.368-25.368h-179.399v347.164z" fill="#6ee1ff"></path>
+</g><g><path d="m122.546 363.13v-92.945c0-16.877 13.682-30.559 30.559-30.559h96.362c7.04 0 12.746-5.707 12.746-12.746v-75.224c0-7.04-5.707-12.746-12.746-12.746h-126.921v-82.556h-89.97v385.267h262.826c14.01 0 25.368-11.358 25.368-25.368v-22.565h-167.666c-16.877 0-30.558-13.681-30.558-30.558zm-55.527 21.202c-13.612 0-13.589-21.119 0-21.119 13.612 0 13.589 21.119 0 21.119zm0-59.652c-13.612 0-13.589-21.119 0-21.119 13.612 0 13.589 21.119 0 21.119zm0-62.19c-13.612 0-13.589-21.119 0-21.119 13.612-.001 13.589 21.119 0 21.119zm0-67.268c-13.612 0-13.589-21.119 0-21.119 13.612 0 13.589 21.119 0 21.119zm1.269-60.92c-13.612 0-13.589-21.119 0-21.119 13.612-.001 13.589 21.119 0 21.119z" fill="#05cdff"></path>
+</g><g><path d="m249.466 227.622h-145.586c-7.04 0-12.746-5.707-12.746-12.746v-75.224c0-7.04 5.707-12.746 12.746-12.746h145.587c7.04 0 12.746 5.707 12.746 12.746v75.224c0 7.039-5.707 12.746-12.747 12.746z" fill="#fff"></path>
+</g><g><g><path d="m122.546 156.256h108.254v12.004h-108.254z" fill="#6ee1ff"></path>
+</g>
+</g><g><g><path d="m122.546 186.267h108.254v12.004h-108.254z" fill="#6ee1ff"></path>
+</g>
+</g><g><g><path d="m67.249 129.495h-55.659c-3.178 0-5.754-2.576-5.754-5.754s2.576-5.754 5.754-5.754h55.659c3.178 0 5.754 2.576 5.754 5.754 0 3.179-2.576 5.754-5.754 5.754z" fill="#ffc305"></path>
+</g>
+</g><g><g><path d="m67.249 190.417h-55.659c-3.178 0-5.754-2.576-5.754-5.754s2.576-5.754 5.754-5.754h55.659c3.178 0 5.754 2.576 5.754 5.754s-2.576 5.754-5.754 5.754z" fill="#ffc305"></path>
+</g>
+</g><g><g><path d="m67.249 257.092h-55.659c-3.178 0-5.754-2.576-5.754-5.754s2.576-5.754 5.754-5.754h55.659c3.178 0 5.754 2.576 5.754 5.754s-2.576 5.754-5.754 5.754z" fill="#ffc305"></path>
+</g>
+</g><g><g><path d="m67.249 318.013h-55.659c-3.178 0-5.754-2.576-5.754-5.754s2.576-5.754 5.754-5.754h55.659c3.178 0 5.754 2.576 5.754 5.754s-2.576 5.754-5.754 5.754z" fill="#ffc305"></path>
+</g>
+</g><g><g><path d="m67.249 378.934h-55.659c-3.178 0-5.754-2.576-5.754-5.754s2.576-5.754 5.754-5.754h55.659c3.178 0 5.754 2.576 5.754 5.754s-2.576 5.754-5.754 5.754z" fill="#ffc305"></path>
+</g>
+</g><g><g><path d="m24.594 117.988h-12.758c-3.005 0-5.689 2.197-5.974 5.189-.327 3.432 2.363 6.319 5.727 6.319h13.005c3.178 0 5.754-2.576 5.754-5.754 0-3.178-2.576-5.754-5.754-5.754z" fill="#f8e000"></path>
+</g>
+</g><g><g><path d="m24.594 178.909h-12.758c-3.005 0-5.689 2.197-5.974 5.189-.327 3.432 2.363 6.319 5.727 6.319h13.005c3.178 0 5.754-2.576 5.754-5.754 0-3.178-2.576-5.754-5.754-5.754z" fill="#f8e000"></path>
+</g>
+</g><g><g><path d="m24.594 245.584h-12.758c-3.005 0-5.689 2.197-5.974 5.189-.327 3.432 2.363 6.318 5.727 6.318h13.005c3.178 0 5.754-2.576 5.754-5.754 0-3.177-2.576-5.753-5.754-5.753z" fill="#f8e000"></path>
+</g>
+</g><g><g><path d="m24.594 306.505h-12.758c-3.005 0-5.689 2.197-5.974 5.189-.327 3.432 2.363 6.319 5.727 6.319h13.005c3.178 0 5.754-2.576 5.754-5.754 0-3.177-2.576-5.754-5.754-5.754z" fill="#f8e000"></path>
+</g>
+</g><g><g><path d="m24.594 367.427h-12.758c-3.005 0-5.689 2.197-5.974 5.189-.327 3.432 2.363 6.319 5.727 6.319h13.005c3.178 0 5.754-2.576 5.754-5.754 0-3.178-2.576-5.754-5.754-5.754z" fill="#f8e000"></path>
+</g>
+</g>
+</g><g><g><path d="m444.1 127.977c-8.675 0-15.708 7.033-15.708 15.708v8.254l10.128 4.895 7.593-15.712c2.177-4.503 1.213-9.701-2.013-13.145z" fill="#6ee1ff"></path>
+</g><g><path d="m428.124 151.122 7.593-15.712c1.801-3.727 5.314-6.065 9.138-6.542-1.083-1.416-2.495-2.613-4.209-3.441-5.844-2.824-12.871-.376-15.695 5.468l-7.593 15.712 21.163 10.228.27-.558z" fill="#05cdff"></path>
+</g><g><path d="m302.332 293.685h89.773v37.047h-89.773z" fill="#f8e000" transform="matrix(.435 -.9 .9 .435 -84.97 488.982)"></path>
+</g><g><path d="m315.735 334.785-8.368 17.315 38.478 18.596 42.705-88.366-13.64-6.592-22.334 46.213c-6.63 13.718-23.124 19.464-36.841 12.834z" fill="#ffc305"></path>
+</g><g><path d="m305.251 406.696c-.39 0-.785-.086-1.159-.267-1.327-.642-1.884-2.237-1.242-3.565l8.368-17.315c.642-1.327 2.236-1.882 3.564-1.242 1.327.642 1.884 2.237 1.242 3.565l-8.368 17.315c-.461.953-1.413 1.509-2.405 1.509z" fill="#fff"></path>
+</g><g><path d="m337.899 209.014h99.395v35.318h-99.395z" fill="#fff" transform="matrix(-.435 .9 -.9 -.435 760.34 -23.674)"></path>
+</g><g><path d="m447.011 161.362-15.212 31.477-38.478-18.596 15.212-31.477c1.869-3.867 6.518-5.486 10.385-3.618l24.475 11.828c3.867 1.87 5.487 6.519 3.618 10.386z" fill="#2896ff"></path>
+</g><g><path d="m353.799 226.939h99.395v14.835h-99.395z" fill="#6ee1ff" transform="matrix(-.435 .9 -.9 -.435 790.077 -26.962)"></path>
+</g><g><path d="m313.621 383.687 2.297 10.407 29.926-23.398-29.675-14.342z" fill="#1a396b"></path>
+</g><g><path d="m307.626 390.087 8.292 4.007.251-37.74-8.802-4.254z" fill="#2896ff"></path>
+</g><g><g><path d="m443.089 169.478-4.397 9.098-37.933-18.332c-2.747-1.327-6.05-.177-7.377 2.57l-34.353 71.084c-2.428 5.025-8.471 7.13-13.496 4.701l39.206-81.125c3.504-7.251 12.223-10.288 19.474-6.784z" fill="#1a396b"></path>
+</g>
+</g>
+</g>
+</g></svg>
+            
+            
+          </span>
+                <h4 class="u-text u-text-default u-text-3">Reliable</h4>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-40 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-2">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2"><span class="u-custom-item u-icon u-icon-circle u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512"><use xlink:href="#svg-4a10"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" id="svg-4a10"><g><path d="m480.792 152.537c-.068-.002-.134-.01-.202-.01h-26.428-210.931v357.295c1.446 0 2.751-.797 3.482-2.044 4.41-7.515 12.571-12.561 21.913-12.561h211.964c.068 0 .134-.008.202-.01z" fill="#0078c8"></path><g><path d="m480.59 152.527h-26.428-17.266c3.243 0 5.873 2.629 5.873 5.873v330.944c0 3.244-2.629 5.873-5.873 5.873h43.694c3.243 0 5.873-2.629 5.873-5.873 0-6.355 0-324.138 0-330.944-.001-3.244-2.63-5.873-5.873-5.873z" fill="#0268b4"></path>
+</g><path d="m445.339 133.105h-187.426c-8.109 0-14.682 6.573-14.682 14.682v315.891h2.381c2.619-4.019 7.146-6.682 12.301-6.682h187.426z" fill="#d5e3f4"></path><path d="m243.231 509.822v-29.801-16.343-311.151h-210.931-26.427c-3.244 0-5.873 2.63-5.873 5.873v151.617 38.741 140.585c0 3.243 2.629 5.873 5.873 5.873h211.963c9.343 0 17.503 5.047 21.913 12.561.732 1.247 2.037 2.045 3.482 2.045z" fill="#0268b4"></path><g><path d="m410.037 188.097h-122.681c-4.72 0-8.546-3.826-8.546-8.546 0-4.72 3.826-8.546 8.546-8.546h122.681c4.72 0 8.546 3.826 8.546 8.546 0 4.72-3.826 8.546-8.546 8.546z" fill="#3e5959"></path>
+</g><g><path d="m410.037 226.856h-122.681c-4.72 0-8.546-3.826-8.546-8.546 0-4.72 3.826-8.546 8.546-8.546h122.681c4.72 0 8.546 3.826 8.546 8.546 0 4.72-3.826 8.546-8.546 8.546z" fill="#3e5959"></path>
+</g><g><path d="m410.037 304.374h-122.681c-4.72 0-8.546-3.826-8.546-8.546 0-4.72 3.826-8.546 8.546-8.546h122.681c4.72 0 8.546 3.826 8.546 8.546 0 4.72-3.826 8.546-8.546 8.546z" fill="#3e5959"></path>
+</g><path d="m400.351 426.431h-103.31c-4.405 0-7.976-3.571-7.976-7.976v-77.482c0-4.405 3.571-7.976 7.976-7.976h103.31c4.405 0 7.976 3.571 7.976 7.976v77.482c.001 4.405-3.57 7.976-7.976 7.976z" fill="#f47c7c"></path><path d="m240.851 463.678h2.381v-315.891c0-8.109-6.573-14.682-14.682-14.682h-189.398c-3.784 0-6.852 3.068-6.852 6.852v310.188c0 3.784 3.068 6.852 6.852 6.852h189.397c5.156-.001 9.682 2.662 12.302 6.681z" fill="#b3dafe"></path><path d="m152.553 300.902v56.972l33.836-23.828c3.223-2.269 3.223-7.047 0-9.316z" fill="#e5eef9"></path><g><path d="m199.106 188.097h-122.68c-4.72 0-8.546-3.826-8.546-8.546 0-4.72 3.826-8.546 8.546-8.546h122.681c4.72 0 8.546 3.826 8.546 8.546-.001 4.72-3.827 8.546-8.547 8.546z" fill="#3e5959"></path>
+</g><g><path d="m199.106 226.856h-122.68c-4.72 0-8.546-3.826-8.546-8.546 0-4.72 3.826-8.546 8.546-8.546h122.681c4.72 0 8.546 3.826 8.546 8.546-.001 4.72-3.827 8.546-8.547 8.546z" fill="#3e5959"></path>
+</g><g><path d="m199.106 265.615h-122.68c-4.72 0-8.546-3.826-8.546-8.546 0-4.72 3.826-8.546 8.546-8.546h122.681c4.72 0 8.546 3.826 8.546 8.546-.001 4.72-3.827 8.546-8.547 8.546z" fill="#3e5959"></path>
+</g><g><path d="m199.106 410.961h-122.68c-4.72 0-8.546-3.826-8.546-8.546 0-4.72 3.826-8.546 8.546-8.546h122.681c4.72 0 8.546 3.826 8.546 8.546-.001 4.72-3.827 8.546-8.547 8.546z" fill="#3e5959"></path>
+</g><path d="m391.906 248.523h-104.55c-4.72 0-8.546 3.826-8.546 8.546 0 4.72 3.826 8.546 8.546 8.546h104.55z" fill="#3e5959"></path><g><path d="m391.907 40.357c-4.257 0-7.707-3.451-7.707-7.707v-22.765c0-4.256 3.451-7.707 7.707-7.707s7.707 3.451 7.707 7.707v22.765c0 4.257-3.45 7.707-7.707 7.707z" fill="#fea95c"></path>
+</g><g><path d="m338.484 55.513c-1.972 0-3.945-.752-5.45-2.257l-16.097-16.097c-3.01-3.01-3.01-7.89 0-10.899 3.01-3.01 7.89-3.01 10.899 0l16.097 16.097c3.01 3.01 3.01 7.89 0 10.899-1.504 1.505-3.477 2.257-5.449 2.257z" fill="#fea95c"></path>
+</g><g><path d="m445.33 55.513c-1.972 0-3.945-.752-5.45-2.257-3.01-3.01-3.01-7.89 0-10.899l16.097-16.097c3.01-3.01 7.89-3.01 10.899 0 3.01 3.01 3.01 7.89 0 10.899l-16.096 16.097c-1.505 1.505-3.477 2.257-5.45 2.257z" fill="#fea95c"></path>
+</g><g><path d="m504.293 100.519h-22.765c-4.256 0-7.707-3.451-7.707-7.707s3.451-7.707 7.707-7.707h22.765c4.256 0 7.707 3.451 7.707 7.707s-3.451 7.707-7.707 7.707z" fill="#fea95c"></path>
+</g><g><path d="m302.286 100.519h-22.765c-4.257 0-7.707-3.451-7.707-7.707s3.451-7.707 7.707-7.707h22.765c4.256 0 7.707 3.451 7.707 7.707s-3.45 7.707-7.707 7.707z" fill="#fea95c"></path>
+</g><g><path d="m447.31 133.105h-34.955c3.784 0 6.852 3.068 6.852 6.852v310.188c0 3.784-3.068 6.851-6.852 6.851h34.955c3.784 0 6.852-3.068 6.852-6.851v-310.188c0-3.784-3.068-6.852-6.852-6.852z" fill="#b3dafe"></path>
+</g><path d="m363.204 213.038h57.405c3.741-11.135 9.94-21.282 18.13-29.702 12.051-12.388 19.231-29.536 18.432-48.364-1.432-33.734-28.959-61.141-62.699-62.433-37.247-1.426-67.891 28.347-67.891 65.276 0 17.71 7.053 33.765 18.499 45.527 8.189 8.416 14.383 18.562 18.122 29.693z" fill="#fdb97e"></path><path d="m363.204 213.038h57.405v23.508c0 15.852-12.851 28.703-28.703 28.703-15.852 0-28.703-12.851-28.703-28.703v-23.508z" fill="#678d98"></path><path d="m457.172 134.972c-1.432-33.734-28.959-61.141-62.699-62.433-5.921-.227-11.673.341-17.164 1.595 28.065 6.446 49.475 31.196 50.733 60.838.799 18.828-6.381 35.975-18.432 48.364-8.191 8.42-14.39 18.567-18.13 29.702h29.129c3.741-11.135 9.94-21.282 18.131-29.702 12.051-12.388 19.231-29.536 18.432-48.364z" fill="#fea95c"></path><path d="m391.48 213.038v23.508c0 10.534-5.678 19.738-14.138 24.731 4.27 2.52 9.247 3.972 14.565 3.972 15.852 0 28.703-12.851 28.703-28.703v-23.508z" fill="#537983"></path><path d="m152.553 300.902v56.972l33.836-23.828c3.223-2.269 3.223-7.047 0-9.316z" fill="#f9c6c6"></path><path d="m186.389 334.046c3.222-2.27 3.222-7.047 0-9.316l-33.836-23.828v26.216l21.837 15.378z" fill="#f9b1b1"></path><path d="m9.116 300.859c-5.034 0-9.116 4.081-9.116 9.116v26.26c0-5.034 4.081-9.116 9.116-9.116h36.33v-26.26z" fill="#e94444"></path><path d="m45.445 306.728h107.108v51.146h-107.108z" fill="#d83131"></path><path d="m0 315.843v32.915c0 5.034 4.081 9.116 9.116 9.116h36.33v-51.147h-36.33c-5.035.001-9.116 4.082-9.116 9.116z" fill="#f47c7c"></path><path d="m45.445 300.902h107.108v26.216h-107.108z" fill="#ca2c2c"></path><path d="m0 310.017v26.218c0-5.034 4.081-9.116 9.116-9.116h36.33v-26.218h-36.33c-5.035.001-9.116 4.082-9.116 9.116z" fill="#ee6161"></path>
+</g></svg>
+            
+            
+          </span>
+                <h4 class="u-text u-text-default u-text-4">e-Certification</h4>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-40 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-3">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3"><span class="u-custom-item u-icon u-icon-circle u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 24 24"><use xlink:href="#svg-5ce8"></use></svg><svg class="u-svg-content" viewBox="0 0 24 24" id="svg-5ce8"><circle cx="8.989" cy="12" fill="#fafafa" r="9"></circle><g fill="#f44336"><path d="m8.989 21c-4.962 0-9-4.038-9-9s4.038-9 9-9 9 4.038 9 9-4.037 9-9 9zm0-16.5c-4.136 0-7.5 3.364-7.5 7.5s3.364 7.5 7.5 7.5 7.5-3.364 7.5-7.5-3.364-7.5-7.5-7.5z"></path><path d="m8.989 17.5c-3.033 0-5.5-2.467-5.5-5.5s2.467-5.5 5.5-5.5 5.5 2.467 5.5 5.5-2.467 5.5-5.5 5.5zm0-9.5c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z"></path><path d="m8.989 14c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2zm0-2.5c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5z"></path>
+</g><path d="m9 12.75c-.192 0-.384-.073-.53-.22-.293-.293-.293-.768 0-1.061l6.5-6.5c.293-.293.768-.293 1.061 0s.293.768 0 1.061l-6.5 6.5c-.147.147-.339.22-.531.22z" fill="#607d8b"></path><path d="m18.25 6h-2.5c-.414 0-.75-.336-.75-.75v-2.5c0-.199.079-.39.22-.53l2-2c.215-.214.538-.279.817-.163.28.116.463.39.463.693v1.75h1.75c.303 0 .577.183.693.463s.052.603-.163.817l-2 2c-.14.141-.331.22-.53.22z" fill="#2196f3"></path><path d="m17.5 24c-3.584 0-6.5-2.916-6.5-6.5s2.916-6.5 6.5-6.5 6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5z" fill="#2196f3"></path><path d="m16.5 20c-.173 0-.347-.06-.488-.181l-1.75-1.5c-.314-.27-.351-.743-.081-1.058s.742-.352 1.058-.081l1.203 1.031 2.758-2.971c.282-.304.756-.321 1.06-.04.304.282.321.757.04 1.06l-3.25 3.5c-.148.159-.349.24-.55.24z" fill="#fafafa"></path></svg>
+            
+            
+          </span>
+                <h4 class="u-text u-text-default u-text-5">Effective</h4>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-opacity u-opacity-40 u-palette-5-dark-2 u-radius-16 u-repeater-item u-shape-round u-list-item-4">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4"><span class="u-custom-item u-icon u-icon-circle u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512"><use xlink:href="#svg-6609"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" id="svg-6609"><g><g><g><g><path d="m127.68 509.48c-6.885-4.6-8.76-13.901-4.16-20.801l60-90c4.629-6.929 13.975-8.716 20.801-4.16 6.885 4.6 8.76 13.901 4.16 20.801l-60 90c-4.649 6.95-13.965 8.718-20.801 4.16z" fill="#396973"></path>
+</g>
+</g>
+</g><g><g><g><path d="m363.52 505.32-60-90c-4.6-6.899-2.725-16.201 4.16-20.801 6.826-4.57 16.172-2.769 20.801 4.16l60 90c4.6 6.899 2.725 16.201-4.16 20.801-6.848 4.565-16.16 2.779-20.801-4.16z" fill="#2d4a59"></path>
+</g>
+</g>
+</g><g><g><g><path d="m256 62c-8.291 0-15-6.709-15-15v-32c0-8.291 6.709-15 15-15s15 6.709 15 15v32c0 8.291-6.709 15-15 15z" fill="#396973"></path>
+</g>
+</g>
+</g><path d="m271 47v-32c0-8.291-6.709-15-15-15v62c8.291 0 15-6.709 15-15z" fill="#2d4a59"></path><g><g><g><g><path d="m481 407c0 8.291-6.709 15-15 15h-420c-8.291 0-15-6.709-15-15v-345c0-8.291 6.709-15 15-15h420c8.291 0 15 6.709 15 15z" fill="#f3f5f9"></path>
+</g>
+</g>
+</g>
+</g><path d="m481 62c0-8.291-6.709-15-15-15h-210v375h210c8.291 0 15-6.709 15-15z" fill="#e1e6f0"></path><g id="Presentation_2_"><g><path d="m343.001 268.7 30 44.735-30 48.564h-57.001l-30-53.02 30-66.979c2.1 0 4.501.601 6.599 1.5z" fill="#ffbe40"></path>
+</g><g><g><g><g><path d="m166 92-30 45-45 30c0 41.4 33.6 75 75 75s75-33.6 75-75-33.6-75-75-75z" fill="#5ab267"></path>
+</g>
+</g>
+</g>
+</g><path d="m166 92v60c0 8.284-6.716 15-15 15h-60c0-41.4 33.6-75 75-75z" fill="#ffdf40"></path><g><path d="m376 122h-60c-8.291 0-15-6.709-15-15s6.709-15 15-15h60c8.291 0 15 6.709 15 15s-6.709 15-15 15z" fill="#b8c4d9"></path>
+</g><g><path d="m376 182h-60c-8.291 0-15-6.709-15-15s6.709-15 15-15h60c8.291 0 15 6.709 15 15s-6.709 15-15 15z" fill="#b8c4d9"></path>
+</g><g><g><g><path d="m166 302h-60c-8.291 0-15-6.709-15-15s6.709-15 15-15h60c8.291 0 15 6.709 15 15s-6.709 15-15 15z" fill="#cfd7e6"></path>
+</g>
+</g>
+</g><g><g><g><path d="m166 362h-60c-8.291 0-15-6.709-15-15s6.709-15 15-15h60c8.291 0 15 6.709 15 15s-6.709 15-15 15z" fill="#cfd7e6"></path>
+</g>
+</g>
+</g>
+</g><path d="m421 227v120c0 8.401-6.599 15-15 15h-62.999v-93.3l52.5-52.2c4.2-4.501 10.8-5.7 16.198-3.301 5.701 2.401 9.301 7.801 9.301 13.801z" fill="#e63a3a"></path><g><g><g><path d="m497 62h-482c-8.291 0-15-6.709-15-15s6.709-15 15-15h482c8.291 0 15 6.709 15 15s-6.709 15-15 15z" fill="#396973"></path>
+</g>
+</g>
+</g><path d="m497 32h-241v30h241c8.291 0 15-6.709 15-15s-6.709-15-15-15z" fill="#2d4a59"></path><path d="m286 242v120h-60c-8.401 0-15-6.599-15-15v-30c0-3.9 1.5-7.8 4.501-10.499l60-60c2.699-3.001 6.599-4.501 10.499-4.501z" fill="#ff7559"></path><path d="m256 266.001v95.999h30v-120c-3.9 0-7.8 1.5-10.499 4.501z" fill="#e63a3a"></path>
+</g></svg>
+            
+            
+          </span>
+                <h4 class="u-text u-text-default u-text-6">Analysis</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+    
+   <!-- <section class="u-clearfix u-custom-color-1 u-section-5" id="sec-8fa1">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-text u-text-default u-text-font u-text-1">Success rate</h1>
+        <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-1">
+                <h1 class="u-text u-text-default u-text-palette-3-base u-title u-text-2" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">100+</h1>
+                <p class="u-text u-text-3">Registred Student</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
+                <h1 class="u-text u-text-default u-text-palette-3-base u-title u-text-4" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">85</h1>
+                <p class="u-text u-text-5">Contributors</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-3">
+                <h1 class="u-text u-text-default u-text-palette-3-base u-title u-text-6" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">67</h1>
+                <p class="u-text u-text-7">Donars</p>
+              </div>
+            </div>
+            <div class="u-align-center u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-4">
+                <h1 class="u-text u-text-default u-text-palette-3-base u-title u-text-8" data-animation-name="counter" data-animation-event="scroll" data-animation-duration="3000">28</h1>
+                <p class="u-text u-text-9">e-Certificate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>-->
+  
+    
+    
+<footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-2612">
+<div>
+            <svg class="waves wavesHome" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto" style="background-color:#292d33;">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(50,205,50.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#f0f8ff" />
+                </g>
+            </svg>
+        </div>
+<div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-22 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1">
+                  <img class="u-expanded-width u-image u-image-default u-image-1 u-image-contain" src="{% static 'images/svg.svg' %}" alt="" data-image-width="1280" data-image-height="853">
+                  <p class="u-text u-text-1 dctext_green">College e-Certification a secured and fatest way to deliver certificates.</p>
+                  <div class="u-social-icons u-spacing-10 u-social-icons-1">
+                    <a class="u-social-url" title="facebook" target="_blank" href="#"><span class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.196 112.196"><use xlink:href="#svg-c2cb"></use></svg><svg class="u-svg-content" viewBox="0 0 112.196 112.196" x="0px" y="0px" id="svg-c2cb" style="enable-background:new 0 0 112.196 112.196;"><g><circle style="fill:currentColor;" cx="56.098" cy="56.098" r="56.098"></circle><path style="fill:#FFFFFF;" d="M70.201,58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34   c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.668-3.217,3.513v7.585h11.334L70.201,58.294z"></path>
+</g></svg></span>
+                    </a>
+                    <a class="u-social-url" title="twitter" target="_blank" href="#"><span class="u-icon u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112.197 112.197"><use xlink:href="#svg-85aa"></use></svg><svg class="u-svg-content" viewBox="0 0 112.197 112.197" x="0px" y="0px" id="svg-85aa" style="enable-background:new 0 0 112.197 112.197;"><g><circle style="fill:#55ACEE;" cx="56.099" cy="56.098" r="56.098"></circle><g><path style="fill:#F1F2F2;" d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417    c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409    c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742    c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17    c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239    c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188    c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734    C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"></path>
+</g>
+</g></svg></span>
+                    </a>
+                    <a class="u-social-url" target="_blank" title="Instagram" href="#"><span class="u-icon u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112"><use xlink:href="#svg-0027"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-0027"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+            z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+            C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+            c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
+                    </a>
+                    <a class="u-social-url" target="_blank" title="LinkedIn" href="#"><span class="u-icon u-social-icon u-social-linkedin u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112"><use xlink:href="#svg-b75f"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-b75f"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
+            C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
+            H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path></svg></span>
+                    </a>
+                    <a class="u-social-url" target="_blank" title="Pinterest" href="#"><span class="u-icon u-social-icon u-social-pinterest u-icon-5"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112"><use xlink:href="#svg-f9d2"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-f9d2"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M61.1,76.9c-4.7-0.3-6.7-2.7-10.3-5c-2,10.7-4.6,20.9-11.9,26.2c-2.2-16.1,3.3-28.2,5.9-41
+            c-4.4-7.5,0.6-22.5,9.9-18.8c11.6,4.6-10,27.8,4.4,30.7C74.2,72,80.3,42.8,71,33.4C57.5,19.6,31.7,33,34.9,52.6
+            c0.8,4.8,5.8,6.2,2,12.9c-8.7-1.9-11.2-8.8-10.9-17.8C26.5,32.8,39.3,22.5,52.2,21c16.3-1.9,31.6,5.9,33.7,21.2
+            C88.2,59.5,78.6,78.2,61.1,76.9z"></path></svg></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <h4 class="u-text u-text-palette-2-base u-text-2">Links</h4>
+                  <ul class="u-text u-text-custom-color-6 u-text-3">
+                    <li> <a href="{% url 'home' %}">College e-Certification</a></li>
+                            
+                            <li> <a href="{% url 'tandc' %}">Terms & Conditions</a></li>
+							<li> <a href="{% url 'privacy' %}">Privacy</a></li>
+                            <li> <a href="{% url 'register' %}">Registration</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-18 u-layout-cell-3">
+                <div class="u-container-layout u-container-layout-3">
+                  <h4 class="u-text u-text-default u-text-palette-2-base u-text-4">Contact Us</h4>
+                  <a href="tel:+917743894219" class="u-active-none u-btn u-btn-rectangle u-button-style u-hover-none u-none u-radius-0 u-text-custom-color-6 u-btn-1"><span class="u-icon u-icon-6"><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><path style="fill:#87E694;" d="M407,512H105C47.103,512,0,464.897,0,407V105C0,47.103,47.103,0,105,0h302  c57.897,0,105,47.103,105,105v302C512,464.897,464.897,512,407,512z"></path><path style="fill:#66CC70;" d="M407,0H256v512h151c57.897,0,105-47.103,105-105V105C512,47.103,464.897,0,407,0z"></path><path style="fill:#FFFFFF;" d="M350.932,315.787c-10.079-6.048-22.981-4.459-31.292,3.852l0,0  c-11.716,11.716-30.711,11.716-42.426,0l-84.853-84.853c-11.716-11.716-11.716-30.711,0-42.426l0,0  c8.311-8.311,9.9-21.213,3.852-31.292l-18.957-31.596c-7.279-12.131-23.013-16.064-35.144-8.786l-13.39,8.034  c-31.242,31.242,0.416,113.553,70.711,183.848s152.606,101.953,183.848,70.711l8.034-13.39c7.278-12.131,3.345-27.866-8.786-35.144  L350.932,315.787z"></path><path style="fill:#F2F2F2;" d="M382.527,334.745l-31.596-18.958c-10.079-6.047-22.981-4.459-31.292,3.853l0,0  c-11.716,11.716-30.711,11.716-42.426,0L256,298.426v60.98c53.337,35.719,104.219,46.933,127.279,23.873l8.034-13.39  C398.592,357.758,394.658,342.023,382.527,334.745z"></path></svg><img></span>&nbsp; {{contact_no}}
+                  </a>
+                  <p class="u-text u-text-custom-color-6 u-text-default u-text-5">
+                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-6 u-btn-2" href="support@cecertification.in"><span class="u-icon u-icon-7"><svg class="u-svg-content" viewBox="0 0 512 512" style="width: 1em; height: 1em;"><linearGradient id="a" gradientTransform="matrix(1 0 0 -1 0 -9462)" gradientUnits="userSpaceOnUse" x1="0" x2="512" y1="-9718" y2="-9718"><stop offset="0" stop-color="#00f38d"></stop><stop offset="1" stop-color="#009eff"></stop>
+</linearGradient><path d="m512 256c0 141.386719-114.613281 256-256 256s-256-114.613281-256-256 114.613281-256 256-256 256 114.613281 256 256zm0 0" fill="url(#a)"></path><path d="m397.1875 119.984375h-282.375c-24.160156 0-43.8125 19.652344-43.8125 43.8125v184.40625c0 24.160156 19.652344 43.8125 43.8125 43.8125h282.375c24.15625 0 43.8125-19.65625 43.8125-43.8125v-184.40625c0-24.160156-19.652344-43.8125-43.8125-43.8125zm-4.417969 30-136.769531 101.726563-136.769531-101.726563zm4.417969 212.03125h-282.375c-7.617188 0-13.8125-6.195313-13.8125-13.8125v-174.390625l155 115.289062 155-115.289062v174.390625c0 7.617187-6.195312 13.8125-13.8125 13.8125zm0 0" fill="#fff"></path></svg><img></span>&nbsp; {{email_address}}
+                    </a>
+                  </p>
+                  <p class="u-text u-text-custom-color-6 u-text-default u-text-6"><span class="u-icon u-icon-8"><svg class="u-svg-content" viewBox="0 0 512 512" style="width: 1em; height: 1em;"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="0" x2="512" y1="256" y2="256"><stop offset="0" stop-color="#00f38d"></stop><stop offset="1" stop-color="#009eff"></stop>
+</linearGradient><path d="m512 256c0 141.386719-114.613281 256-256 256s-256-114.613281-256-256 114.613281-256 256-256 256 114.613281 256 256zm0 0" fill="url(#a)"></path><g fill="#fff"><path d="m111.996094 217.222656v-3.734375c0-59.9375 48.765625-108.703125 108.703125-108.703125 56.316406 0 102.765625 43.046875 108.175781 97.964844l26.410156 24.097656c.304688-3.25.472656-6.460937.472656-9.625v-3.734375c0-74.46875-60.585937-135.054687-135.058593-135.054687-74.46875 0-135.054688 60.585937-135.054688 135.054687v3.734375c0 37.664063 21.589844 81.550782 64.179688 130.445313 30.871093 35.445312 61.3125 60.160156 62.59375 61.195312l8.28125 6.691407v-34.246094c-26.703125-23.398438-108.703125-100.441406-108.703125-164.085938zm0 0"></path><path d="m301.734375 322.851562h39.527344v39.527344h-39.527344zm0 0"></path><path d="m162.875 213.488281c0 31.882813 25.941406 57.824219 57.824219 57.824219 31.882812 0 57.824219-25.941406 57.824219-57.824219 0-31.882812-25.941407-57.824219-57.824219-57.824219-31.882813 0-57.824219 25.941407-57.824219 57.824219zm85.648438 0c0 15.339844-12.484376 27.824219-27.824219 27.824219-15.339844 0-27.824219-12.480469-27.824219-27.824219 0-15.339843 12.480469-27.824219 27.824219-27.824219 15.339843 0 27.824219 12.484376 27.824219 27.824219zm0 0"></path><path d="m426.355469 324.886719-105.1875-95.960938-105.1875 95.960938 20.21875 22.164062 5.703125-5.203125v38.171875c0 20.703125 16.84375 37.546875 37.550781 37.546875h83.433594c20.707031 0 37.550781-16.84375 37.550781-37.546875v-38.171875l5.703125 5.203125zm-55.921875 55.132812c0 4.160157-3.386719 7.546875-7.546875 7.546875h-83.4375c-4.164063 0-7.550781-3.386718-7.550781-7.546875v-65.542969l49.269531-44.945312 49.265625 44.945312zm0 0"></path>
+</g></svg><img></span>&nbsp;Pune - 412208
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+		  <div class="row mt-5">
+                    <div class="footerCopyright">
+                        © <script>
+                          var dateYearToday = new Date().getFullYear();
+                          dateYearToday =  dateYearToday - 1;
+                          document.write(dateYearToday);
+                        </script> - <script>
+                          document.write(new Date().getFullYear());
+                        </script> College e-Certification | All Rights Reserveds<br />
+                        Designed by &nbsp;<span class="badge badge-green publisherIT" data-toggle="tooltip" data-placement="top" title="IT CREATION | @ishwartalokar.in">IT CREATION</span>
+                    </div>
+          </div>
+        </div>
+      </div>
+	  
+	  <section class="u-backlink u-clearfix" style="background-color:#1C2833;" >
+      <a class="u-link" href="{% url 'home' %}" target="_blank">
+        <span>College e-Certification</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="#" target="_blank">
+        <span>IT CREATION</span>
+      </a>. 
+    </section>
+	
+	</footer>   
+  </body>
+</html>
