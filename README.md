@@ -1,6 +1,11 @@
 # e-Certification System
 
 **e-Certification** is a scalable and modular full-stack web-based platform designed to streamline the digital issuance, management, and tracking of certificates. It serves three core actors: **Students/Users**, **Institutes/Organizations**, and **System Admins**.
+![eCertification Home Page](https://github.com/ishwartalokar/ecertification/blob/main/mywebsite/Screenshot%20from%202025-05-21%2007-44-06.png)
+
+**Dashboard**
+![eCertification Dashboard](https://github.com/ishwartalokar/ecertification/blob/main/mywebsite/Screenshot%20from%202025-05-21%2007-37-57.png)
+
 
 ## Table of Contents
 
